@@ -1,6 +1,6 @@
 # Vildagliptin for Skin Fibrosis in Systemic Sclerosis
 
-**A one-day hackathon drug-repurposing hypothesis.** Should vildagliptin, an approved type 2 diabetes drug that blocks the enzyme DPP-4, be tested against skin fibrosis in systemic sclerosis? This project put together public human data, network analysis and pharmacology to answer one narrow question. Does the evidence justify a lab proof-of-mechanism experiment?
+**A seven-day hackathon drug-repurposing hypothesis.** Should vildagliptin, an approved type 2 diabetes drug that blocks the enzyme DPP-4, be tested against skin fibrosis in systemic sclerosis? This project put together public human data, network analysis and pharmacology to answer one narrow question. Does the evidence justify a lab proof-of-mechanism experiment?
 
 > **📊 Full presentation (figures, references, business case):**
 > **[Hackathon deck on Gamma](https://gamma.app/docs/Hackathon-Grupo-D-0rwwtj2kbafpj8k?mode=doc)**
