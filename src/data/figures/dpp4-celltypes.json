@@ -1,0 +1,17 @@
+{
+  "source": "figure public/img/deck/fig-05-dpp4-celltypes.png (values read from figure, approximate)",
+  "exact": false,
+  "dataset": "GSE138669",
+  "method": "Median fraction of DPP4-positive cells per provisional cell compartment, by condition (descriptive)",
+  "unit": "%",
+  "data": [
+    { "cell": "Fibroblast", "control": 9.58, "ssc": 14.65 },
+    { "cell": "NK", "control": 2.84, "ssc": 3.43 },
+    { "cell": "Endothelial", "control": 1.72, "ssc": 1.22 },
+    { "cell": "Myeloid", "control": 1.21, "ssc": 0.85 },
+    { "cell": "Mast", "control": 0.55, "ssc": 1.14 },
+    { "cell": "Keratinocyte", "control": 0.39, "ssc": 0.66 },
+    { "cell": "T cell", "control": 0.0, "ssc": 0.47 },
+    { "cell": "Pericyte", "control": 0.03, "ssc": 0.0 }
+  ]
+}

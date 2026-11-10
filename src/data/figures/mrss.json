@@ -1,0 +1,13 @@
+{
+  "source": "code: vildagliptin_ssc_figures.py L8440–8466 (frozen DaVinci R3 results)",
+  "exact": true,
+  "dataset": "GSE181549",
+  "method": "Spearman correlation of fibroblast program scores with baseline mRSS; status from covariate-adjusted models",
+  "data": [
+    { "program": { "en": "Activated (PRSS23/THBS1)", "pt": "Ativado (PRSS23/THBS1)" }, "rho": 0.704484, "status": "supported" },
+    { "program": { "en": "Myofibroblast", "pt": "Miofibroblasto" }, "rho": 0.691531, "status": "supported" },
+    { "program": { "en": "ECM", "pt": "MEC" }, "rho": 0.551557, "status": "supported" },
+    { "program": { "en": "Progenitor", "pt": "Progenitor" }, "rho": 0.438975, "status": "directional" },
+    { "program": { "en": "DPP4", "pt": "DPP4" }, "rho": -0.211494, "status": "not" }
+  ]
+}

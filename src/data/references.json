@@ -1,0 +1,983 @@
+[
+ {
+  "key": "distler2026",
+  "authors": [
+   "Distler, J. H. W."
+  ],
+  "etAl": true,
+  "title": "Mechanisms of fibrotic tissue remodelling: insights from systemic sclerosis",
+  "journal": "Nat. Rev. Rheumatol.",
+  "volume": "22",
+  "pages": "221-238",
+  "year": 2026,
+  "doi": "10.1038/s41584-025-01349-z",
+  "pmid": "41588245",
+  "url": "https://doi.org/10.1038/s41584-025-01349-z",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "soare2020",
+  "authors": [
+   "Soare, A."
+  ],
+  "etAl": true,
+  "title": "Dipeptidylpeptidase 4 as a Marker of Activated Fibroblasts and a Potential Target for the Treatment of Fibrosis in Systemic Sclerosis",
+  "journal": "Arthritis Rheumatol.",
+  "volume": "72",
+  "pages": "137-149",
+  "year": 2020,
+  "doi": "10.1002/art.41058",
+  "pmid": "31350829",
+  "url": "https://doi.org/10.1002/art.41058",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "rinkevich2015",
+  "authors": [
+   "Rinkevich, Y."
+  ],
+  "etAl": true,
+  "title": "Skin fibrosis. Identification and isolation of a dermal lineage with intrinsic fibrogenic potential",
+  "journal": "Science",
+  "volume": "348",
+  "pages": "aaa2151",
+  "year": 2015,
+  "doi": "10.1126/science.aaa2151",
+  "pmid": "25883361",
+  "url": "https://doi.org/10.1126/science.aaa2151",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "delgaldo2025",
+  "authors": [
+   "Del Galdo, F."
+  ],
+  "etAl": true,
+  "title": "EULAR recommendations for the treatment of systemic sclerosis: 2023 update",
+  "journal": "Ann. Rheum. Dis.",
+  "volume": "84",
+  "pages": "29-40",
+  "year": 2025,
+  "doi": "10.1136/ard-2024-226430",
+  "pmid": "39874231",
+  "url": "https://doi.org/10.1136/ard-2024-226430",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "zhang2025",
+  "authors": [
+   "Zhang, J. L."
+  ],
+  "etAl": true,
+  "title": "Sustained-Release Sitagliptin Microneedles for Scar Prevention via Fibroblast-to-Adipocyte Conversion",
+  "journal": "Small Sci.",
+  "volume": "5",
+  "pages": "e202500140",
+  "year": 2025,
+  "doi": "10.1002/smsc.202500140",
+  "pmid": "41395508",
+  "url": "https://doi.org/10.1002/smsc.202500140",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "liu2020",
+  "authors": [
+   "Liu, Y.",
+   "Qi, Y."
+  ],
+  "etAl": false,
+  "title": "Vildagliptin, a CD26/DPP4 inhibitor, ameliorates bleomycin-induced pulmonary fibrosis via regulating the extracellular matrix",
+  "journal": "Int. Immunopharmacol.",
+  "volume": "87",
+  "pages": "106774",
+  "year": 2020,
+  "doi": "10.1016/j.intimp.2020.106774",
+  "pmid": "32731178",
+  "url": "https://doi.org/10.1016/j.intimp.2020.106774",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "tabib2021",
+  "authors": [
+   "Tabib, T."
+  ],
+  "etAl": true,
+  "title": "Myofibroblast transcriptome indicates SFRP2hi fibroblast progenitors in systemic sclerosis skin",
+  "journal": "Nat. Commun.",
+  "volume": "12",
+  "pages": "4384",
+  "year": 2021,
+  "doi": "10.1038/s41467-021-24607-6",
+  "pmid": "34282151",
+  "url": "https://doi.org/10.1038/s41467-021-24607-6",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "sinnathurai2016",
+  "authors": [
+   "Sinnathurai, P."
+  ],
+  "etAl": true,
+  "title": "Circulating fibroblast activation protein and dipeptidyl peptidase 4 in rheumatoid arthritis and systemic sclerosis",
+  "journal": "Int. J. Rheum. Dis.",
+  "volume": "21",
+  "pages": "1915-1923",
+  "year": 2016,
+  "doi": "10.1111/1756-185X.13031",
+  "pmid": "27990763",
+  "url": "https://doi.org/10.1111/1756-185X.13031",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "vorstandlechner2021",
+  "authors": [
+   "Vorstandlechner, V."
+  ],
+  "etAl": true,
+  "title": "The serine proteases dipeptidyl-peptidase 4 and urokinase are key molecules in human and mouse scar formation",
+  "journal": "Nat. Commun.",
+  "volume": "12",
+  "pages": "6242",
+  "year": 2021,
+  "doi": "10.1038/s41467-021-26495-2",
+  "pmid": "34716325",
+  "url": "https://doi.org/10.1038/s41467-021-26495-2",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "lee2020",
+  "authors": [
+   "Lee, S. Y."
+  ],
+  "etAl": true,
+  "title": "Soluble Dipeptidyl Peptidase-4 Induces Fibroblast Activation Through Proteinase-Activated Receptor-2",
+  "journal": "Front. Pharmacol.",
+  "volume": "11",
+  "pages": "552818",
+  "year": 2020,
+  "doi": "10.3389/fphar.2020.552818",
+  "pmid": "33117158",
+  "url": "https://doi.org/10.3389/fphar.2020.552818",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "zeyer2024",
+  "authors": [
+   "Zeyer, K. A."
+  ],
+  "etAl": true,
+  "title": "Dipeptidyl Peptidase-4-Mediated Fibronectin Processing Evokes a Profibrotic Extracellular Matrix",
+  "journal": "J. Invest. Dermatol.",
+  "volume": "144",
+  "pages": "2477-2487.e13",
+  "year": 2024,
+  "doi": "10.1016/j.jid.2024.03.020",
+  "pmid": "38570029",
+  "url": "https://doi.org/10.1016/j.jid.2024.03.020",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "ohm2022",
+  "authors": [
+   "Ohm, B.",
+   "Moneke, I.",
+   "Jungraithmayr, W."
+  ],
+  "etAl": false,
+  "title": "Targeting cluster of differentiation 26 / dipeptidyl peptidase 4 (CD26/DPP4) in organ fibrosis",
+  "journal": "Br. J. Pharmacol.",
+  "volume": "180",
+  "pages": "2846-2861",
+  "year": 2022,
+  "doi": "10.1111/bph.15967",
+  "pmid": "36196001",
+  "url": "https://doi.org/10.1111/bph.15967",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "deng2021",
+  "authors": [
+   "Deng, C. C."
+  ],
+  "etAl": true,
+  "title": "Single-cell RNA-seq reveals fibroblast heterogeneity and increased mesenchymal fibroblasts in human fibrotic skin diseases",
+  "journal": "Nat. Commun.",
+  "volume": "12",
+  "pages": "3709",
+  "year": 2021,
+  "doi": "10.1038/s41467-021-24110-y",
+  "pmid": "34140509",
+  "url": "https://doi.org/10.1038/s41467-021-24110-y",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "skaug2019",
+  "authors": [
+   "Skaug, B."
+  ],
+  "etAl": true,
+  "title": "Global skin gene expression analysis of early diffuse cutaneous systemic sclerosis shows a prominent innate and adaptive inflammatory profile",
+  "journal": "Ann. Rheum. Dis.",
+  "volume": "79",
+  "pages": "379-386",
+  "year": 2019,
+  "doi": "10.1136/annrheumdis-2019-215894",
+  "pmid": "31767698",
+  "url": "https://doi.org/10.1136/annrheumdis-2019-215894",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "skaug2021",
+  "authors": [
+   "Skaug, B."
+  ],
+  "etAl": true,
+  "title": "Large-scale analysis of longitudinal skin gene expression in systemic sclerosis reveals relationships of immune cell and fibroblast activity with skin thickness and a trend towards normalisation over time",
+  "journal": "Ann. Rheum. Dis.",
+  "volume": "81",
+  "pages": "516-523",
+  "year": 2021,
+  "doi": "10.1136/annrheumdis-2021-221352",
+  "pmid": "34937693",
+  "url": "https://doi.org/10.1136/annrheumdis-2021-221352",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "clark2022",
+  "authors": [
+   "Clark, K. E. N."
+  ],
+  "etAl": true,
+  "title": "Integrated analysis of dermal blister fluid proteomics and genome-wide skin gene expression in systemic sclerosis: an observational study",
+  "journal": "Lancet Rheumatol.",
+  "volume": "4",
+  "pages": "e507-e516",
+  "year": 2022,
+  "doi": "10.1016/S2665-9913(22)00094-7",
+  "pmid": "36404995",
+  "url": "https://doi.org/10.1016/S2665-9913(22)00094-7",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "assassi2013",
+  "authors": [
+   "Assassi, S."
+  ],
+  "etAl": true,
+  "title": "Skin gene expression correlates of severity of interstitial lung disease in systemic sclerosis",
+  "journal": "Arthritis Rheum.",
+  "volume": "65",
+  "pages": "2917-27",
+  "year": 2013,
+  "doi": "10.1002/art.38101",
+  "pmid": "23897225",
+  "url": "https://doi.org/10.1002/art.38101",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "yin2024",
+  "authors": [
+   "Yin, M."
+  ],
+  "etAl": true,
+  "title": "TGFβ-mediated inhibition of hypodermal adipocyte progenitor differentiation promotes wound-induced skin fibrosis",
+  "journal": "Cell Prolif.",
+  "volume": "58",
+  "pages": "e13722",
+  "year": 2024,
+  "doi": "10.1111/cpr.13722",
+  "pmid": "39072821",
+  "url": "https://doi.org/10.1111/cpr.13722",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "pei2022",
+  "authors": [
+   "Pei, B.",
+   "Zhang, N.",
+   "Pang, T.",
+   "Sun, G."
+  ],
+  "etAl": false,
+  "title": "Linagliptin ameliorates pulmonary fibrosis in systemic sclerosis mouse model via inhibition of endothelial-to-mesenchymal transition",
+  "journal": "Mol. Cell. Biochem.",
+  "volume": "477",
+  "pages": "995-1007",
+  "year": 2022,
+  "doi": "10.1007/s11010-021-04349-1",
+  "pmid": "34988855",
+  "url": "https://doi.org/10.1007/s11010-021-04349-1",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "wang2021",
+  "authors": [
+   "Wang, P."
+  ],
+  "etAl": true,
+  "title": "Dipeptidyl Peptidase-4 Inhibitor Reduces the Risk of Developing Hypertrophic Scars and Keloids following Median Sternotomy in Diabetic Patients: A Nationwide Retrospective Cohort Study Using the National Database of Health Insurance Claims of Japan",
+  "journal": "Plast. Reconstr. Surg.",
+  "volume": "147",
+  "pages": "1067e-1068e",
+  "year": 2021,
+  "doi": "10.1097/PRS.0000000000007935",
+  "pmid": "33961605",
+  "url": "https://doi.org/10.1097/PRS.0000000000007935",
+  "kind": "literature",
+  "verified": true,
+  "note": "Letter/comment on Suwanai et al. 2020 (same title)."
+ },
+ {
+  "key": "suwanai2020",
+  "authors": [
+   "Suwanai, H.",
+   "Watanabe, R.",
+   "Sato, M.",
+   "Odawara, M.",
+   "Matsumura, H."
+  ],
+  "etAl": false,
+  "title": "Dipeptidyl Peptidase-4 Inhibitor Reduces the Risk of Developing Hypertrophic Scars and Keloids following Median Sternotomy in Diabetic Patients: A Nationwide Retrospective Cohort Study Using the National Database of Health Insurance Claims of Japan",
+  "journal": "Plast. Reconstr. Surg.",
+  "volume": "146",
+  "pages": "83-89",
+  "year": 2020,
+  "doi": "10.1097/PRS.0000000000006904",
+  "pmid": "32590649",
+  "url": "https://doi.org/10.1097/PRS.0000000000006904",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "helm2023",
+  "authors": [
+   "Helm, M."
+  ],
+  "etAl": true,
+  "title": "Repurposing DPP4 Inhibition to Improve Hair Follicle Activation and Regeneration",
+  "journal": "J. Invest. Dermatol.",
+  "volume": "143",
+  "pages": "2132-2144.e15",
+  "year": 2023,
+  "doi": "10.1016/j.jid.2023.04.027",
+  "pmid": "37236597",
+  "url": "https://doi.org/10.1016/j.jid.2023.04.027",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "desai2023",
+  "authors": [
+   "Desai, R.",
+   "Chawla, H.",
+   "Larin, K.",
+   "Assassi, S."
+  ],
+  "etAl": false,
+  "title": "Methods for objective assessment of skin involvement in systemic sclerosis",
+  "journal": "Curr. Opin. Rheumatol.",
+  "volume": "35",
+  "pages": "301-308",
+  "year": 2023,
+  "doi": "10.1097/BOR.0000000000000968",
+  "pmid": "37605869",
+  "url": "https://doi.org/10.1097/BOR.0000000000000968",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "kumanovics2017",
+  "authors": [
+   "Kumánovics, G."
+  ],
+  "etAl": true,
+  "title": "Assessment of skin involvement in systemic sclerosis",
+  "journal": "Rheumatology (Oxford)",
+  "volume": "56",
+  "pages": "v53-v66",
+  "year": 2017,
+  "doi": "10.1093/rheumatology/kex202",
+  "pmid": "28992173",
+  "url": "https://doi.org/10.1093/rheumatology/kex202",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "low2019",
+  "authors": [
+   "Low, A. H. L."
+  ],
+  "etAl": true,
+  "title": "Evaluation of Scleroderma Clinical Trials Consortium training recommendations on modified Rodnan skin score assessment in scleroderma",
+  "journal": "Int. J. Rheum. Dis.",
+  "volume": "22",
+  "pages": "1036-1040",
+  "year": 2019,
+  "doi": "10.1111/1756-185X.13523",
+  "pmid": "30838791",
+  "url": "https://doi.org/10.1111/1756-185X.13523",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "khanna2020",
+  "authors": [
+   "Khanna, D.",
+   "Huang, S.",
+   "Lin, C. J. F.",
+   "Spino, C."
+  ],
+  "etAl": false,
+  "title": "New composite endpoint in early diffuse cutaneous systemic sclerosis: revisiting the provisional American College of Rheumatology Composite Response Index in Systemic Sclerosis",
+  "journal": "Ann. Rheum. Dis.",
+  "volume": "80",
+  "pages": "641-650",
+  "year": 2020,
+  "doi": "10.1136/annrheumdis-2020-219100",
+  "pmid": "33257497",
+  "url": "https://doi.org/10.1136/annrheumdis-2020-219100",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "kowalbielecka2016",
+  "authors": [
+   "Kowal-Bielecka, O."
+  ],
+  "etAl": true,
+  "title": "Update of EULAR recommendations for the treatment of systemic sclerosis",
+  "journal": "Ann. Rheum. Dis.",
+  "volume": "76",
+  "pages": "1327-1339",
+  "year": 2016,
+  "doi": "10.1136/annrheumdis-2016-209909",
+  "pmid": "27941129",
+  "url": "https://doi.org/10.1136/annrheumdis-2016-209909",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "pellar2016",
+  "authors": [
+   "Pellar, R. E.",
+   "Pope, J. E."
+  ],
+  "etAl": false,
+  "title": "Evidence-based management of systemic sclerosis: Navigating recommendations and guidelines",
+  "journal": "Semin. Arthritis Rheum.",
+  "volume": "46",
+  "pages": "767-774",
+  "year": 2016,
+  "doi": "10.1016/j.semarthrit.2016.12.003",
+  "pmid": "28088339",
+  "url": "https://doi.org/10.1016/j.semarthrit.2016.12.003",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "sieirosantos2025",
+  "authors": [
+   "Sieiro Santos, C.",
+   "Del Galdo, F."
+  ],
+  "etAl": false,
+  "title": "New horizons in systemic sclerosis treatment: advances and emerging therapies in 2025",
+  "journal": "RMD Open",
+  "volume": "11",
+  "pages": "e005776",
+  "year": 2025,
+  "doi": "10.1136/rmdopen-2025-005776",
+  "pmid": "40592721",
+  "url": "https://doi.org/10.1136/rmdopen-2025-005776",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "pavlovdolijanovic2025",
+  "authors": [
+   "Pavlov-Dolijanovic, S."
+  ],
+  "etAl": true,
+  "title": "Rheumatologists' Adherence to EULAR Recommendations for Systemic Sclerosis Treatment: Experience of a Single Center in Serbia",
+  "journal": "J. Clin. Med.",
+  "volume": "14",
+  "pages": "4994",
+  "year": 2025,
+  "doi": "10.3390/jcm14144994",
+  "pmid": "40725689",
+  "url": "https://doi.org/10.3390/jcm14144994",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "khanna2024",
+  "authors": [
+   "Khanna, D."
+  ],
+  "etAl": true,
+  "title": "A randomised, parallel-group, double-blind, placebo-controlled phase 3 study to Determine the effectiveness of the type I interferon receptor antibody, Anifrolumab, In SYstemic sclerosis: DAISY study design and rationale",
+  "journal": "Clin. Exp. Rheumatol.",
+  "volume": "42",
+  "pages": "1635-1644",
+  "year": 2024,
+  "doi": "10.55563/clinexprheumatol/s8qcyu",
+  "pmid": "39152751",
+  "url": "https://doi.org/10.55563/clinexprheumatol/s8qcyu",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "vangaveti2022",
+  "authors": [
+   "Vangaveti, V. N."
+  ],
+  "etAl": true,
+  "title": "Effects of vildagliptin on wound healing and markers of inflammation in patients with type 2 diabetic foot ulcer: a prospective, randomized, double-blind, placebo-controlled, single-center study",
+  "journal": "Diabetol. Metab. Syndr.",
+  "volume": "14",
+  "pages": "183",
+  "year": 2022,
+  "doi": "10.1186/s13098-022-00938-2",
+  "pmid": "36456992",
+  "url": "https://doi.org/10.1186/s13098-022-00938-2",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "guney2016",
+  "authors": [
+   "Guney, E.",
+   "Menche, J.",
+   "Vidal, M.",
+   "Barábasi, A. L."
+  ],
+  "etAl": false,
+  "title": "Network-based in silico drug efficacy screening",
+  "journal": "Nat. Commun.",
+  "volume": "7",
+  "pages": "10331",
+  "year": 2016,
+  "doi": "10.1038/ncomms10331",
+  "pmid": "26831545",
+  "url": "https://doi.org/10.1038/ncomms10331",
+  "kind": "method",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "brandt2005",
+  "authors": [
+   "Brandt, I."
+  ],
+  "etAl": true,
+  "title": "Inhibition of dipeptidyl-peptidase IV catalyzed peptide truncation by Vildagliptin ((2S)-{[(3-hydroxyadamantan-1-yl)amino]acetyl}-pyrrolidine-2-carbonitrile)",
+  "journal": "Biochem. Pharmacol.",
+  "volume": "70",
+  "pages": "134-43",
+  "year": 2005,
+  "doi": "10.1016/j.bcp.2005.04.009",
+  "pmid": "15907807",
+  "url": "https://doi.org/10.1016/j.bcp.2005.04.009",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "ahren2011",
+  "authors": [
+   "Ahrén, B."
+  ],
+  "etAl": true,
+  "title": "Mechanisms of action of the dipeptidyl peptidase-4 inhibitor vildagliptin in humans",
+  "journal": "Diabetes Obes. Metab.",
+  "volume": "13",
+  "pages": "775-83",
+  "year": 2011,
+  "doi": "10.1111/j.1463-1326.2011.01414.x",
+  "pmid": "21507182",
+  "url": "https://doi.org/10.1111/j.1463-1326.2011.01414.x",
+  "kind": "literature",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "badiaimompel2022",
+  "authors": [
+   "Badia-I-Mompel, P."
+  ],
+  "etAl": true,
+  "title": "decoupleR: ensemble of computational methods to infer biological activities from omics data",
+  "journal": "Bioinform. Adv.",
+  "volume": "2",
+  "pages": "vbac016",
+  "year": 2022,
+  "doi": "10.1093/bioadv/vbac016",
+  "pmid": "36699385",
+  "url": "https://doi.org/10.1093/bioadv/vbac016",
+  "kind": "method",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "szklarczyk2023",
+  "authors": [
+   "Szklarczyk, D."
+  ],
+  "etAl": true,
+  "title": "The STRING database in 2023: protein-protein association networks and functional enrichment analyses for any sequenced genome of interest",
+  "journal": "Nucleic Acids Res.",
+  "volume": "51",
+  "pages": "D638-D646",
+  "year": 2023,
+  "doi": "10.1093/nar/gkac1000",
+  "pmid": "36370105",
+  "url": "https://doi.org/10.1093/nar/gkac1000",
+  "kind": "method",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "korsunsky2019",
+  "authors": [
+   "Korsunsky, I."
+  ],
+  "etAl": true,
+  "title": "Fast, sensitive and accurate integration of single-cell data with Harmony",
+  "journal": "Nat. Methods",
+  "volume": "16",
+  "pages": "1289-1296",
+  "year": 2019,
+  "doi": "10.1038/s41592-019-0619-0",
+  "pmid": "31740819",
+  "url": "https://doi.org/10.1038/s41592-019-0619-0",
+  "kind": "method",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "wolf2019",
+  "authors": [
+   "Wolf, F. A."
+  ],
+  "etAl": true,
+  "title": "PAGA: graph abstraction reconciles clustering with trajectory inference through a topology preserving map of single cells",
+  "journal": "Genome Biol.",
+  "volume": "20",
+  "pages": "59",
+  "year": 2019,
+  "doi": "10.1186/s13059-019-1663-x",
+  "pmid": "30890159",
+  "url": "https://doi.org/10.1186/s13059-019-1663-x",
+  "kind": "method",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "wolf2018",
+  "authors": [
+   "Wolf, F. A.",
+   "Angerer, P.",
+   "Theis, F. J."
+  ],
+  "etAl": false,
+  "title": "SCANPY: large-scale single-cell gene expression data analysis",
+  "journal": "Genome Biol.",
+  "volume": "19",
+  "pages": "15",
+  "year": 2018,
+  "doi": "10.1186/s13059-017-1382-0",
+  "pmid": "29409532",
+  "url": "https://doi.org/10.1186/s13059-017-1382-0",
+  "kind": "method",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "schubert2018",
+  "authors": [
+   "Schubert, M."
+  ],
+  "etAl": true,
+  "title": "Perturbation-response genes reveal signaling footprints in cancer gene expression",
+  "journal": "Nat. Commun.",
+  "volume": "9",
+  "pages": "20",
+  "year": 2018,
+  "doi": "10.1038/s41467-017-02391-6",
+  "pmid": "29295995",
+  "url": "https://doi.org/10.1038/s41467-017-02391-6",
+  "kind": "method",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "subramanian2017",
+  "authors": [
+   "Subramanian, A."
+  ],
+  "etAl": true,
+  "title": "A Next Generation Connectivity Map: L1000 Platform and the First 1,000,000 Profiles",
+  "journal": "Cell",
+  "volume": "171",
+  "pages": "1437-1452.e17",
+  "year": 2017,
+  "doi": "10.1016/j.cell.2017.10.049",
+  "pmid": "29195078",
+  "url": "https://doi.org/10.1016/j.cell.2017.10.049",
+  "kind": "method",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "mullerdott2023",
+  "authors": [
+   "Müller-Dott, S."
+  ],
+  "etAl": true,
+  "title": "Expanding the coverage of regulons from high-confidence prior knowledge for accurate estimation of transcription factor activities",
+  "journal": "Nucleic Acids Res.",
+  "volume": "51",
+  "pages": "10934-10949",
+  "year": 2023,
+  "doi": "10.1093/nar/gkad841",
+  "pmid": "37843125",
+  "url": "https://doi.org/10.1093/nar/gkad841",
+  "kind": "method",
+  "verified": true,
+  "note": ""
+ },
+ {
+  "key": "geo58095",
+  "authors": [
+   "NCBI Gene Expression Omnibus"
+  ],
+  "etAl": false,
+  "title": "GSE58095: skin gene expression in systemic sclerosis (bulk)",
+  "journal": "",
+  "volume": "",
+  "pages": "",
+  "year": "accessed 2026",
+  "doi": "",
+  "pmid": "",
+  "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE58095",
+  "kind": "data",
+  "verified": true,
+  "note": "Data source; accessed during the hackathon (August 2026)."
+ },
+ {
+  "key": "geo138669",
+  "authors": [
+   "NCBI Gene Expression Omnibus"
+  ],
+  "etAl": false,
+  "title": "GSE138669: single-cell RNA-seq of systemic sclerosis and healthy skin",
+  "journal": "",
+  "volume": "",
+  "pages": "",
+  "year": "accessed 2026",
+  "doi": "",
+  "pmid": "",
+  "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE138669",
+  "kind": "data",
+  "verified": true,
+  "note": "Data source; accessed during the hackathon (August 2026)."
+ },
+ {
+  "key": "geo249279",
+  "authors": [
+   "NCBI Gene Expression Omnibus"
+  ],
+  "etAl": false,
+  "title": "GSE249279: single-cell RNA-seq of systemic sclerosis skin (independent cohort)",
+  "journal": "",
+  "volume": "",
+  "pages": "",
+  "year": "accessed 2026",
+  "doi": "",
+  "pmid": "",
+  "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE249279",
+  "kind": "data",
+  "verified": true,
+  "note": "Data source; accessed during the hackathon (August 2026)."
+ },
+ {
+  "key": "geo181549",
+  "authors": [
+   "NCBI Gene Expression Omnibus"
+  ],
+  "etAl": false,
+  "title": "GSE181549: skin gene expression with baseline mRSS in systemic sclerosis",
+  "journal": "",
+  "volume": "",
+  "pages": "",
+  "year": "accessed 2026",
+  "doi": "",
+  "pmid": "",
+  "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE181549",
+  "kind": "data",
+  "verified": true,
+  "note": "Data source; accessed during the hackathon (August 2026)."
+ },
+ {
+  "key": "reactome",
+  "authors": [],
+  "etAl": false,
+  "title": "Reactome pathway knowledgebase",
+  "journal": "",
+  "volume": "",
+  "pages": "",
+  "year": "accessed 2026",
+  "doi": "",
+  "pmid": "",
+  "url": "https://reactome.org",
+  "kind": "data",
+  "verified": true,
+  "note": "Data source; accessed during the hackathon (August 2026)."
+ },
+ {
+  "key": "opentargets",
+  "authors": [],
+  "etAl": false,
+  "title": "Open Targets Platform",
+  "journal": "",
+  "volume": "",
+  "pages": "",
+  "year": "accessed 2026",
+  "doi": "",
+  "pmid": "",
+  "url": "https://platform.opentargets.org",
+  "kind": "data",
+  "verified": true,
+  "note": "Data source; accessed during the hackathon (August 2026)."
+ },
+ {
+  "key": "gwascatalog",
+  "authors": [],
+  "etAl": false,
+  "title": "NHGRI-EBI GWAS Catalog",
+  "journal": "",
+  "volume": "",
+  "pages": "",
+  "year": "accessed 2026",
+  "doi": "",
+  "pmid": "",
+  "url": "https://www.ebi.ac.uk/gwas/",
+  "kind": "data",
+  "verified": true,
+  "note": "Data source; accessed during the hackathon (August 2026)."
+ },
+ {
+  "key": "gtex",
+  "authors": [],
+  "etAl": false,
+  "title": "GTEx Portal",
+  "journal": "",
+  "volume": "",
+  "pages": "",
+  "year": "accessed 2026",
+  "doi": "",
+  "pmid": "",
+  "url": "https://gtexportal.org",
+  "kind": "data",
+  "verified": true,
+  "note": "Data source; accessed during the hackathon (August 2026)."
+ },
+ {
+  "key": "ctgov",
+  "authors": [],
+  "etAl": false,
+  "title": "ClinicalTrials.gov API v2, query dated 29 August 2026 (gliptins × systemic sclerosis, scleroderma, morphea)",
+  "journal": "",
+  "volume": "",
+  "pages": "",
+  "year": 2026,
+  "doi": "",
+  "pmid": "",
+  "url": "https://clinicaltrials.gov/data-api/api",
+  "kind": "data",
+  "verified": true,
+  "note": "Data source; accessed during the hackathon (August 2026)."
+ },
+ {
+  "key": "cortellis",
+  "authors": [],
+  "etAl": false,
+  "title": "Cortellis Drug Discovery Intelligence (Clarivate): vildagliptin pharmacology record (DPP-4 IC50 median of 68 in vitro measurements; off-target potencies), reviewed manually August 2026",
+  "journal": "",
+  "volume": "",
+  "pages": "",
+  "year": 2026,
+  "doi": "",
+  "pmid": "",
+  "url": "https://clarivate.com/cortellis/",
+  "kind": "data",
+  "verified": true,
+  "note": "Data source; accessed during the hackathon (August 2026)."
+ },
+ {
+  "key": "sigcom",
+  "authors": [],
+  "etAl": false,
+  "title": "SigCom LINCS: LINCS L1000 signature search",
+  "journal": "",
+  "volume": "",
+  "pages": "",
+  "year": "accessed 2026",
+  "doi": "",
+  "pmid": "",
+  "url": "https://maayanlab.cloud/sigcom-lincs/",
+  "kind": "data",
+  "verified": true,
+  "note": "Data source; accessed during the hackathon (August 2026)."
+ }
+]

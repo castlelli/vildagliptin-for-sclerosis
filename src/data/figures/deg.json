@@ -1,0 +1,33 @@
+{
+  "source": "figure public/img/deck/fig-04-bulk-deg.png (values read from figure, approximate)",
+  "exact": false,
+  "dataset": "GSE58095",
+  "method": "SSc vs control differential expression (13 pre-specified fibrosis genes, FDR < 0.05) + Reactome GSEA",
+  "genes": [
+    { "gene": "DPP4", "diff": -0.11, "sig": false },
+    { "gene": "COL1A1", "diff": 1.33, "sig": true },
+    { "gene": "COL1A2", "diff": 0.79, "sig": true },
+    { "gene": "COL3A1", "diff": 0.57, "sig": true },
+    { "gene": "CTGF", "diff": 0.64, "sig": true },
+    { "gene": "CTHRC1", "diff": 0.61, "sig": true },
+    { "gene": "PRSS23", "diff": 0.78, "sig": true },
+    { "gene": "THBS1", "diff": 0.96, "sig": true },
+    { "gene": "FNDC1", "diff": 0.97, "sig": true },
+    { "gene": "SFRP2", "diff": 0.52, "sig": true },
+    { "gene": "SFRP4", "diff": 0.60, "sig": true },
+    { "gene": "ACTA2", "diff": 0.58, "sig": true },
+    { "gene": "TAGLN", "diff": 0.79, "sig": true }
+  ],
+  "pathways": [
+    { "name": "Integrin cell surface interactions", "nes": 2.62 },
+    { "name": "Keratinization", "nes": 2.60 },
+    { "name": "Extracellular matrix organization", "nes": 2.59 },
+    { "name": "Assembly of collagen fibrils and other multimeric structures", "nes": 2.58 },
+    { "name": "ECM proteoglycans", "nes": 2.57 },
+    { "name": "Collagen chain trimerization", "nes": 2.51 },
+    { "name": "Collagen formation", "nes": 2.51 },
+    { "name": "Collagen biosynthesis and modifying enzymes", "nes": 2.48 },
+    { "name": "Degradation of the extracellular matrix", "nes": 2.44 },
+    { "name": "Collagen degradation", "nes": 2.43 }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "source": "figure public/img/deck/fig-06-fibroblast-states.png (β and q printed on the figure; transcribed, rounded as printed)",
+  "exact": true,
+  "dataset": "GSE249279",
+  "method": "Donor-level fibroblast state scores; robust regression; β in SD units; BH q",
+  "sscEffect": [
+    { "state": "Activated fibroblast state", "beta": 1.05, "q": "0.01", "sig": "up" },
+    { "state": "ECM program", "beta": 0.93, "q": "0.03", "sig": "up" },
+    { "state": "DPP4-positive fraction", "beta": -1.41, "q": "<0.001", "sig": "down" },
+    { "state": "Mean DPP4 expression", "beta": -1.50, "q": "<0.001", "sig": "down" },
+    { "state": "Progenitor state", "beta": -0.45, "q": "0.39", "sig": "ns" },
+    { "state": "Myofibroblast state", "beta": 0.32, "q": "0.59", "sig": "ns" }
+  ],
+  "dpp4Association": [
+    { "state": "Progenitor state", "beta": 0.82, "q": "<0.001", "sig": "up" },
+    { "state": "ECM program", "beta": 0.59, "q": "0.01", "sig": "up" },
+    { "state": "Activated fibroblast state", "beta": 0.23, "q": "0.42", "sig": "ns" },
+    { "state": "Myofibroblast state", "beta": -0.39, "q": "0.24", "sig": "ns" }
+  ]
+}

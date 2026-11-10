@@ -1,0 +1,16 @@
+{
+  "source": "Re-implemented one-compartment oral model calibrated to deck figure (public/img/deck/fig-10-pk.png, panels B–C); original R5/R8 parameter tables are not in the repository",
+  "exact": false,
+  "dose": "50 mg every 12 h, steady state",
+  "params": { "ka_per_h": 0.9, "t_half_h": 2.0, "kt_skin_per_h": 0.6, "free_plasma_peak_nM": 690, "hill": 1 },
+  "ic50": { "central_nM": 4.5, "cortellis_median_nM": 13, "cortellis_n": 68 },
+  "offTargets_nM": { "DPP-4": 13, "DPP-9": 191, "DPP-8": 2300, "FAP": 3720 },
+  "kpuGrid": [0.03, 0.05, 0.1, 0.2, 0.3, 0.5, 1],
+  "thresholdTable": {
+    "source": "README / notebook R8 decision thresholds (exact)",
+    "rows": [
+      { "inhibition": 80, "coverage50": 0.10, "coverage80": 0.20 },
+      { "inhibition": 92, "coverage50": 0.20, "coverage80": 0.50 }
+    ]
+  }
+}

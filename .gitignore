@@ -1,5 +1,5 @@
 # Input data bundle and extracted results (not redistributed)
-data/
+/data/
 *.zip
 R[0-9]*_*.png
 *.tsv
