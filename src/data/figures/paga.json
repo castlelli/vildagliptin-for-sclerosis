@@ -1,5 +1,5 @@
 {
-  "source": "figure public/img/deck/fig-07-paga.png (layout and colour-scale values read from figure, approximate) + code vildagliptin_ssc_figures.py cell 7 (branch routes 0→2→4 and 0→6→9, exact)",
+  "source": "figure public/img/deck/fig-07-paga.png (layout and colour-scale values read from figure, approximate) + code ssc_figures/figures/fig07_paga_branches.py (branch routes 0→2→4 and 0→6→9, exact)",
   "exact": false,
   "dataset": "GSE138669 fibroblasts",
   "method": "Scanpy + Harmony + PAGA; node colour = adjusted SSc effect on donor-level cluster fraction (* = significant in original figure)",

@@ -32,3 +32,9 @@ dist/
 .astro/
 .impeccable/review/
 .impeccable/questions/
+
+# Python package
+__pycache__/
+*.egg-info/
+figures_out/
+.ssc_data/

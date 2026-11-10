@@ -1,5 +1,5 @@
 {
-  "source": "code: vildagliptin_ssc_figures.py L4411 (R10_PRIMARY_FALLBACK, DaVinci R10 primary run)",
+  "source": "code: ssc_figures/values.py NETWORK_PROXIMITY_R10 (DaVinci R10 primary run)",
   "exact": true,
   "method": "STRING v12 functional network, combined score ≥ 700; DPP4 → module closest-distance proximity; 1,000 degree-matched permutations; BH FDR",
   "data": [

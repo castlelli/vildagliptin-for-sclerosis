@@ -1,5 +1,5 @@
 {
-  "source": "code: vildagliptin_ssc_figures.py L8440–8466 (frozen DaVinci R3 results)",
+  "source": "code: ssc_figures/values.py MRSS_R3 (frozen DaVinci R3 results)",
   "exact": true,
   "dataset": "GSE181549",
   "method": "Spearman correlation of fibroblast program scores with baseline mRSS; status from covariate-adjusted models",

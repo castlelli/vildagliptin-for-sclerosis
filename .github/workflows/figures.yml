@@ -1,0 +1,21 @@
+name: Figures
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[test]" ruff
+      - run: ruff check ssc_figures tests
+      - run: ruff format --check ssc_figures tests
+      - run: pytest
+      # The only figures that need no private data.
+      - run: python -m ssc_figures 03 15 16

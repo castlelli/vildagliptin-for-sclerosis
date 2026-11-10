@@ -36,8 +36,13 @@ The page shows each result as an interactive chart, with every claim cited (54 r
 │   └── scripts/                  charts, hero simulation, citation popovers
 ├── public/img/                   deck figures (originals of the re-plotted charts) and credited third-party figures
 ├── scripts/check-refs.mjs        checks every citation resolves and EN/PT numbering match
-├── vildagliptin_ssc_figures.py   the original Colab notebook (figures and verdicts)
-└── requirements.txt              libraries the notebook imports
+├── ssc_figures/                  the study's figures as a Python package
+│   ├── figures/figNN_*.py        one module per figure (03–16), the original notebook cells
+│   ├── values.py                 every result written into the code rather than loaded
+│   ├── io.py                     finds the results bundle, verifies SHA-256, output paths
+│   └── style.py                  shared image helpers
+├── notebook/vildagliptin_ssc.ipynb   narrative plus one call per figure (Colab or local)
+└── tests/test_values.py          the page's exact values match values.py
 ```
 
 ### Run the page locally
@@ -54,19 +59,33 @@ Pushing to `main` deploys to GitHub Pages through `.github/workflows/deploy.yml`
 
 ### Where the chart numbers come from
 
-- **Exact, from the notebook code:** network proximity z/q, mRSS ρ, the Kpu threshold table, evidence-landscape and experiment text. The fibroblast-state β/q values are transcribed from labels printed on the original figure.
+- **Exact, from the figure code:** network proximity z/q, mRSS ρ and the evidence landscape (all in `ssc_figures/values.py`), the Kpu threshold table and the experiment text. The fibroblast-state β/q values are transcribed from labels printed on the original figure.
 - **Read from the original figures (approximate, labelled on the page):** bulk expression differences and Reactome NES, DPP4⁺ fractions by cell type, PROGENy/CollecTRI estimates, PAGA layout.
 - **Re-implemented:** the PK explorer is a one-compartment model calibrated to the original figure. It reproduces the study's Kpu threshold table exactly on the study's Kpu grid.
 
 Each original figure is one click away under its chart.
 
-### The notebook
+### The figures
 
-`vildagliptin_ssc_figures.py` is a Colab export that loads frozen results from a private bundle (`colab_upload.zip`), checks each file against its SHA-256 hash and renders the figures. The upstream analyses ran on an HPC cluster (Slurm); that pipeline is not public, so **the notebook cannot be re-run from this repository.** Known issues, kept so the code matches what was presented and marked with `NOTE:` comments:
+The figures render from frozen results in a private bundle (`colab_upload.zip`); every file is checked against its SHA-256 hash first. The upstream analyses ran on an HPC cluster (Slurm) and that pipeline is not public, so **only figures 03, 15 and 16 run without the bundle.**
 
-- Several verdicts and some values are written into the code rather than computed (cells 9, 11–16).
-- Cell 6 references two tables (`d`, `a`) whose loader is missing from the export.
-- It is Colab-only (`google.colab`, `/content` paths, `!pip`).
+```bash
+pip install -e ".[test]"
+python -m ssc_figures --list
+python -m ssc_figures 03 15 16                              # no data needed
+SSC_BUNDLE=/path/to/colab_upload.zip python -m ssc_figures  # everything
+pytest
+```
+
+Output goes to `figures_out/` (`SSC_OUTPUT` to change it). In Colab, open `notebook/vildagliptin_ssc.ipynb`; it installs the package and finds the bundle in your Google Drive.
+
+The code is the notebook that was presented, split one cell per module and formatted; the split was checked to leave every cell's syntax tree unchanged, and figures 03, 15 and 16 render identically to the original. Known limits, marked with `NOTE:` in the code:
+
+- Several verdicts are written into the figure code rather than computed (figures 09, 11–16); the numbers among them are collected in `values.py`.
+- Figure 06 draws two tables (`d`, `a`) whose loader is missing from the original export. It stops with an explanation unless you pass them: `run("06", d=..., a=...)`.
+- Library versions used in Colab were not recorded; only plotly and kaleido are bounded.
+
+The single-file Colab export is in the history at commit `c23ef3b` (`vildagliptin_ssc_figures.py`).
 
 ## Context and credit
 
