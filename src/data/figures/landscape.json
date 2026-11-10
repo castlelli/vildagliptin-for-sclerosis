@@ -1,0 +1,276 @@
+{
+ "source": "code: vildagliptin_ssc_figures.py cell 16 (L10592+), text exact; statuses as printed where the code prints one",
+ "exact": true,
+ "columns": {
+  "supports": "Supports hypothesis",
+  "refines": "Refines model",
+  "nosupport": "No additional support",
+  "experiment": "Requires experiment"
+ },
+ "items": [
+  {
+   "role": "supports",
+   "title": "Human SSc fibrotic program",
+   "finding": "Human SSc skin shows strong collagen and ECM remodeling.",
+   "evidence": "GSE58095 · differential expression · Reactome/GSEA",
+   "status": null,
+   "anchor": "deg",
+   "pt": {
+    "title": "Programa fibrótico da ES humana",
+    "finding": "A pele humana com ES mostra forte remodelamento de colágeno e MEC."
+   }
+  },
+  {
+   "role": "supports",
+   "title": "DPP4 cellular localization",
+   "finding": "DPP4 localizes to a fibroblast-relevant cellular compartment.",
+   "evidence": "GSE138669 · human skin scRNA-seq",
+   "status": null,
+   "anchor": "celltypes",
+   "pt": {
+    "title": "Localização celular do DPP4",
+    "finding": "O DPP4 se localiza num compartimento relevante de fibroblastos."
+   }
+  },
+  {
+   "role": "supports",
+   "title": "Independent scRNA replication",
+   "finding": "DPP4 associations with progenitor and ECM fibroblast programs replicate independently.",
+   "evidence": "GSE138669 + GSE249279",
+   "status": "STRONGLY SUPPORTED",
+   "anchor": "states",
+   "pt": {
+    "title": "Replicação independente em célula única",
+    "finding": "As associações do DPP4 com programas progenitor e de MEC se replicam de forma independente."
+   }
+  },
+  {
+   "role": "supports",
+   "title": "Fibrotic programs ↔ mRSS",
+   "finding": "Activated, myofibroblast and ECM programs strongly track clinical skin severity.",
+   "evidence": "GSE181549 · donor-level mRSS analysis",
+   "status": null,
+   "anchor": "mrss",
+   "pt": {
+    "title": "Programas fibróticos ↔ mRSS",
+    "finding": "Programas ativado, de miofibroblasto e de MEC acompanham fortemente a gravidade clínica da pele."
+   }
+  },
+  {
+   "role": "supports",
+   "title": "Branch-aware fibroblast organization",
+   "finding": "DPP4-high, activated and ECM-associated organization shares a fibroblast branch.",
+   "evidence": "PAGA · pseudotime · donor-level occupancy",
+   "status": null,
+   "anchor": "paga",
+   "pt": {
+    "title": "Organização dos fibroblastos em ramos",
+    "finding": "Estados DPP4-alto, ativado e de MEC dividem um ramo de fibroblastos."
+   }
+  },
+  {
+   "role": "supports",
+   "title": "Network proximity",
+   "finding": "DPP4 lies closer than expected to multiple SSc fibrotic modules.",
+   "evidence": "STRING v12 · degree-matched empirical null",
+   "status": null,
+   "anchor": "network",
+   "pt": {
+    "title": "Proximidade em rede",
+    "finding": "O DPP4 fica mais perto do que o esperado de vários módulos fibróticos da ES."
+   }
+  },
+  {
+   "role": "supports",
+   "title": "Functional DPP4 perturbation",
+   "finding": "Genetic and pharmacological DPP4 inhibition reduces fibroblast activation and fibrosis.",
+   "evidence": "Human dermal fibroblasts + SSc-relevant experimental models",
+   "status": null,
+   "anchor": "known",
+   "pt": {
+    "title": "Perturbação funcional do DPP4",
+    "finding": "A inibição genética e farmacológica de DPP4 reduz ativação de fibroblastos e fibrose."
+   }
+  },
+  {
+   "role": "supports",
+   "title": "SSc TGFβ/SMAD environment",
+   "finding": "Canonical TGFβ/SMAD activity is reproducibly increased in SSc fibroblasts.",
+   "evidence": "PROGENy · CollecTRI · two independent human cohorts",
+   "status": null,
+   "anchor": "signaling",
+   "pt": {
+    "title": "Ambiente TGFβ/SMAD da ES",
+    "finding": "A atividade canônica de TGFβ/SMAD está aumentada de forma reprodutível nos fibroblastos da ES."
+   }
+  },
+  {
+   "role": "supports",
+   "title": "Vildagliptin antifibrotic activity",
+   "finding": "Vildagliptin itself reduces fibrotic phenotypes in preclinical models.",
+   "evidence": "Functional literature · Soare et al. + independent studies",
+   "status": null,
+   "anchor": "known",
+   "pt": {
+    "title": "Atividade antifibrótica da vildagliptina",
+    "finding": "A própria vildagliptina reduz fenótipos fibróticos em modelos pré-clínicos."
+   }
+  },
+  {
+   "role": "supports",
+   "title": "Human systemic DPP4 engagement",
+   "finding": "Clinically achievable human exposure strongly supports systemic DPP4 inhibition.",
+   "evidence": "Published human PK/PD · exposure-to-potency analysis",
+   "status": null,
+   "anchor": "pk",
+   "pt": {
+    "title": "Engajamento sistêmico de DPP4 em humanos",
+    "finding": "A exposição humana alcançável sustenta com folga a inibição sistêmica de DPP4."
+   }
+  },
+  {
+   "role": "supports",
+   "title": "Human-anchored plasma simulation",
+   "finding": "Repeated-dose plasma exposure was modeled from clinically anchored human PK.",
+   "evidence": "50 mg twice daily · repeated-dose PK simulation",
+   "status": null,
+   "anchor": "pk",
+   "pt": {
+    "title": "Simulação plasmática ancorada em humanos",
+    "finding": "A exposição plasmática em doses repetidas foi modelada a partir de PK humana."
+   }
+  },
+  {
+   "role": "supports",
+   "title": "Dermal exposure requirement",
+   "finding": "Skin/plasma exposure required for sustained dermal DPP4 inhibition was quantified.",
+   "evidence": "R8 dermal PK/PD sensitivity analysis",
+   "status": null,
+   "anchor": "pk",
+   "pt": {
+    "title": "Exigência de exposição dérmica",
+    "finding": "A exposição pele/plasma necessária para inibição dérmica sustentada foi quantificada."
+   }
+  },
+  {
+   "role": "supports",
+   "title": "Clinical development gap",
+   "finding": "Human SSc development was not identified among the reviewed records.",
+   "evidence": "PubMed · ClinicalTrials.gov · Cortellis",
+   "status": "SUPPORTED GAP",
+   "anchor": "gap",
+   "pt": {
+    "title": "Lacuna de desenvolvimento clínico",
+    "finding": "Não se identificou desenvolvimento em ES humana nos registros revisados."
+   }
+  },
+  {
+   "role": "refines",
+   "title": "Global DPP4 expression",
+   "finding": "DPP4 is not globally increased in SSc skin.",
+   "evidence": "GSE58095 + GSE138669 + GSE249279",
+   "status": "NOT GLOBALLY INCREASED",
+   "anchor": "deg",
+   "pt": {
+    "title": "Expressão global de DPP4",
+    "finding": "O DPP4 não está aumentado globalmente na pele com ES."
+   }
+  },
+  {
+   "role": "refines",
+   "title": "DPP4 as severity biomarker",
+   "finding": "DPP4 itself does not behave as a positive mRSS severity biomarker.",
+   "evidence": "GSE181549",
+   "status": "NOT SUPPORTED",
+   "anchor": "mrss",
+   "pt": {
+    "title": "DPP4 como biomarcador de gravidade",
+    "finding": "O DPP4 não se comporta como biomarcador positivo de gravidade pelo mRSS."
+   }
+  },
+  {
+   "role": "refines",
+   "title": "Single linear trajectory",
+   "finding": "A universal DPP4 → activated → myofibroblast → ECM trajectory is not supported.",
+   "evidence": "Pseudotime + PAGA",
+   "status": "NOT SUPPORTED",
+   "anchor": "paga",
+   "pt": {
+    "title": "Trajetória linear única",
+    "finding": "Uma trajetória universal DPP4 → ativado → miofibroblasto → MEC não se sustenta."
+   }
+  },
+  {
+   "role": "refines",
+   "title": "DPP4+ canonical signaling state",
+   "finding": "DPP4-positive fibroblasts are not the state with maximal TGFβ/MAPK/NFκB activity.",
+   "evidence": "PROGENy + CollecTRI · R2 + R11",
+   "status": "DISTINCT STATE",
+   "anchor": "signaling",
+   "pt": {
+    "title": "Sinalização canônica no estado DPP4+",
+    "finding": "Fibroblastos DPP4+ não são o estado de maior atividade de TGFβ/MAPK/NFκB."
+   }
+  },
+  {
+   "role": "nosupport",
+   "title": "Vildagliptin LINCS reversal",
+   "finding": "Vildagliptin did not reproducibly reverse three human SSc transcriptomic signatures.",
+   "evidence": "LINCS/L1000 · primary 24 h, 1.11 µM analysis",
+   "status": "NOT REPLICATED",
+   "anchor": "limits",
+   "pt": {
+    "title": "Reversão pela vildagliptina no LINCS",
+    "finding": "A vildagliptina não reverteu de forma reprodutível três assinaturas transcriptômicas de ES."
+   }
+  },
+  {
+   "role": "nosupport",
+   "title": "DPP4 KO/KD LINCS reversal",
+   "finding": "DPP4 genetic perturbation also failed to reproducibly reverse SSc signatures.",
+   "evidence": "LINCS CRISPR + shRNA",
+   "status": "NOT REPLICATED",
+   "anchor": "limits",
+   "pt": {
+    "title": "Reversão por KO/KD de DPP4 no LINCS",
+    "finding": "A perturbação genética de DPP4 também não reverteu as assinaturas de ES."
+   }
+  },
+  {
+   "role": "nosupport",
+   "title": "Human genetics",
+   "finding": "Direct DPP4–SSc GWAS/locus/relevant-tissue eQTL support was not identified.",
+   "evidence": "GWAS Catalog · GTEx · Open Targets",
+   "status": "NOT IDENTIFIED",
+   "anchor": "limits",
+   "pt": {
+    "title": "Genética humana",
+    "finding": "Não se identificou apoio direto de GWAS, locus ou eQTL ligando DPP4 à ES."
+   }
+  },
+  {
+   "role": "experiment",
+   "title": "Human dermal PK/PD",
+   "finding": "Actual vildagliptin exposure and DPP4 inhibition in human SSc skin remain unmeasured.",
+   "evidence": "Paired plasma/skin PK + dermal DPP4 activity",
+   "status": "DIRECTLY TESTABLE",
+   "anchor": "next",
+   "pt": {
+    "title": "PK/PD dérmica humana",
+    "finding": "A exposição real à vildagliptina e a inibição de DPP4 na pele com ES seguem sem medida."
+   }
+  },
+  {
+   "role": "experiment",
+   "title": "Human SSc efficacy",
+   "finding": "Therapeutic effect on skin fibrosis or mRSS has not been established.",
+   "evidence": "Clinical testing only after successful proof-of-mechanism",
+   "status": "DIRECTLY TESTABLE",
+   "anchor": "next",
+   "pt": {
+    "title": "Eficácia na ES humana",
+    "finding": "Efeito terapêutico sobre fibrose cutânea ou mRSS não foi estabelecido."
+   }
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+  "source": "code: vildagliptin_ssc_figures.py L4411 (R10_PRIMARY_FALLBACK, DaVinci R10 primary run)",
+  "exact": true,
+  "method": "STRING v12 functional network, combined score ≥ 700; DPP4 → module closest-distance proximity; 1,000 degree-matched permutations; BH FDR",
+  "data": [
+    {
+      "id": "M1",
+      "label": {
+        "en": "Broad SSc gene set",
+        "pt": "Conjunto amplo de genes da ES"
+      },
+      "z": -0.989,
+      "p": 0.179,
+      "q": 0.195
+    },
+    {
+      "id": "M2",
+      "label": {
+        "en": "SSc-upregulated genes",
+        "pt": "Genes aumentados na ES"
+      },
+      "z": -1.711,
+      "p": 0.02597,
+      "q": 0.03896
+    },
+    {
+      "id": "M3",
+      "label": {
+        "en": "Fibroblast-state module",
+        "pt": "Módulo de estados de fibroblasto"
+      },
+      "z": -2.101,
+      "p": 0.00999,
+      "q": 0.01998
+    },
+    {
+      "id": "M4",
+      "label": {
+        "en": "ECM / fibrotic module",
+        "pt": "Módulo MEC / fibrótico"
+      },
+      "z": -4.52,
+      "p": 0.000999,
+      "q": 0.002398
+    }
+  ],
+  "paths": {
+    "source": "figure public/img/deck/fig-09-network.png (illustrative STRING paths, not the formal test)",
+    "items": [
+      {
+        "target": "THBS1",
+        "path": [
+          "DPP4",
+          "ITGB1",
+          "THBS1"
+        ]
+      },
+      {
+        "target": "COL1A1",
+        "path": [
+          "DPP4",
+          "ITGB1",
+          "COL1A1"
+        ]
+      },
+      {
+        "target": "ACTA2",
+        "path": [
+          "DPP4",
+          "ITGB1",
+          "FBN1",
+          "ACTA2"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "source": "figure public/img/deck/fig-08-progeny.png (values read from figure, approximate)",
+  "exact": false,
+  "datasets": ["GSE138669", "GSE249279"],
+  "method": "decoupler ULM with PROGENy pathways and CollecTRI TF regulons on fibroblast pseudobulk; paired donor-level comparisons. Filled = q < 0.05.",
+  "sscVsControl": [
+    { "target": "TGFβ", "GSE138669": { "est": 1.24, "lo": 0.73, "hi": 1.74, "sig": true }, "GSE249279": { "est": 1.66, "lo": 1.12, "hi": 2.20, "sig": true } },
+    { "target": "SMAD2", "GSE138669": { "est": 0.82, "lo": 0.00, "hi": 1.66, "sig": false }, "GSE249279": { "est": 1.55, "lo": 0.89, "hi": 2.23, "sig": true } },
+    { "target": "SMAD3", "GSE138669": { "est": 1.10, "lo": 0.40, "hi": 1.81, "sig": true }, "GSE249279": { "est": 1.84, "lo": 1.38, "hi": 2.30, "sig": true } },
+    { "target": "SMAD4", "GSE138669": { "est": 1.04, "lo": 0.32, "hi": 1.76, "sig": true }, "GSE249279": { "est": 1.72, "lo": 1.19, "hi": 2.26, "sig": true } }
+  ],
+  "dpp4PosVsNeg": [
+    { "pathway": "TGFβ", "GSE138669": -0.86, "GSE249279": -0.44 },
+    { "pathway": "MAPK", "GSE138669": -0.85, "GSE249279": -0.69 },
+    { "pathway": "NFκB", "GSE138669": -1.61, "GSE249279": -0.95 },
+    { "pathway": "JAK–STAT", "GSE138669": -1.03, "GSE249279": -0.51 },
+    { "pathway": "PI3K", "GSE138669": 0.59, "GSE249279": 0.40 }
+  ]
+}

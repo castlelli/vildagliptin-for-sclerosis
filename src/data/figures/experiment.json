@@ -1,0 +1,58 @@
+{
+ "source": "code: vildagliptin_ssc_figures.py cell 15 (L10011+), exact",
+ "exact": true,
+ "system": "Primary dermal fibroblasts · SSc lesional samples + healthy donor controls · ± TGFβ1 stimulation",
+ "arms": [
+  "vehicle",
+  "vildagliptin (PK-informed)",
+  "DPP4 knockdown",
+  "knockdown + vildagliptin",
+  "nintedanib (positive control)"
+ ],
+ "readouts": [
+  {
+   "name": "Target engagement",
+   "markers": "DPP4 enzymatic activity"
+  },
+  {
+   "name": "Activated fibroblast",
+   "markers": "PRSS23 · THBS1"
+  },
+  {
+   "name": "Myofibroblast",
+   "markers": "ACTA2 · TAGLN"
+  },
+  {
+   "name": "ECM production",
+   "markers": "COL1A1 · soluble collagen"
+  },
+  {
+   "name": "Functional output",
+   "markers": "matrix contraction"
+  }
+ ],
+ "rule": "Target engagement should be confirmed before interpreting the antifibrotic phenotype",
+ "outcomes": [
+  {
+   "id": "go",
+   "drug": true,
+   "kd": true,
+   "title": "GO — drug and mechanism supported",
+   "text": "Vildagliptin reduces DPP4 activity and suppresses fibroblast activation, collagen/ECM output and matrix contraction at exposure-relevant concentrations."
+  },
+  {
+   "id": "drug",
+   "drug": false,
+   "kd": true,
+   "title": "Drug failure — target may remain valid",
+   "text": "DPP4 knockdown suppresses the fibrotic phenotype, but exposure-relevant vildagliptin does not. The target remains plausible, but this repurposing fails."
+  },
+  {
+   "id": "target",
+   "drug": false,
+   "kd": false,
+   "title": "Target / mechanism failure",
+   "text": "Neither DPP4 knockdown nor pharmacological inhibition produces a meaningful antifibrotic phenotype despite adequate experimental target assessment."
+  }
+ ]
+}
