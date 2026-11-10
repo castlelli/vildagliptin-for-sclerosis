@@ -1,0 +1,21 @@
+---
+interface Props { caption?: string; refs?: { n: number; s: string }[]; title?: string; wide?: boolean; original?: string; originalLabel?: string; originalAlt?: string }
+const { caption, refs = [], title, wide, original, originalLabel, originalAlt } = Astro.props;
+const uniq = refs.filter((m, i, a) => a.findIndex((x) => x.n === m.n) === i);
+---
+<figure class:list={['plate', { wide }]} data-develop>
+  {title && <p class="plate-title">{title}</p>}
+  <div class="plate-body grid-ground"><slot /></div>
+  {caption && (
+    <figcaption>
+      <span set:html={caption} />
+      {uniq.length > 0 && <span class="margin-inline" aria-hidden="true">{uniq.map((m) => <span><b>{m.n}</b> {m.s}</span>)}</span>}
+    </figcaption>
+  )}
+  {original && (
+    <details class="original">
+      <summary>{originalLabel}</summary>
+      <img src={original} alt={originalAlt ?? ''} loading="lazy" />
+    </details>
+  )}
+</figure>

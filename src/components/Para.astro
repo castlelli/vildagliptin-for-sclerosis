@@ -1,0 +1,13 @@
+---
+interface Props { html: string; refs: { n: number; s: string }[]; small?: boolean; finding?: boolean }
+const { html, refs, small, finding } = Astro.props;
+const uniq = refs.filter((m, i, a) => a.findIndex((x) => x.n === m.n) === i);
+---
+<div class:list={['row', { small, finding }]}>
+  <p set:html={html} />
+  {uniq.length > 0 && (
+    <aside class="margin" aria-hidden="true">
+      {uniq.map((m) => <p><b>{m.n}</b> {m.s}</p>)}
+    </aside>
+  )}
+</div>
