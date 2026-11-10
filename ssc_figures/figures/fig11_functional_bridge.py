@@ -9,26 +9,21 @@
 **Visualization:** mechanistic evidence bridge · Matplotlib
 """
 
-from ssc_figures.io import OUTPUT_DIR, load_tsv
+from pathlib import Path
 
 import matplotlib.pyplot as plt
+from IPython.display import HTML, display
+from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
-from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
-
-from pathlib import Path
-from IPython.display import display, HTML
-
+from ssc_figures.io import OUTPUT_DIR, require
 
 # ============================================================
 # VALIDATE CURATED EVIDENCE TABLES
 # ============================================================
 
-preclinical = load_tsv("R5b_preclinical_evidence_audit.tsv")
-
-ladder = load_tsv("R5b_translational_evidence_ladder.tsv")
-
-# NOTE: `preclinical` and `ladder` are loaded (fail fast if missing) but not
-# used below; the figure and verdict text in this cell are hardcoded.
+# NOTE: the figure and verdict text in this cell are hardcoded. These two
+# tables document them; the original cell loaded them without using them.
+require("R5b_preclinical_evidence_audit.tsv", "R5b_translational_evidence_ladder.tsv")
 
 
 # ============================================================

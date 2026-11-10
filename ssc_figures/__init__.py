@@ -38,9 +38,15 @@ def prepare_export():
         pass
 
 
-def run(number):
-    """Render one figure by number ("04") and return the module's namespace."""
+def run(number, **tables):
+    """Render one figure by number ("04") and return the module's namespace.
+
+    Keyword arguments are placed in the module's namespace before it runs;
+    Figure 06 needs its two tables passed this way (``run("06", d=..., a=...)``).
+    """
     key = f"{int(number):02d}"
     if key not in FIGURES:
         raise KeyError(f"No figure {number}; choose from {', '.join(FIGURES)}")
-    return runpy.run_module(f"ssc_figures.figures.{FIGURES[key]}", run_name="__main__")
+    return runpy.run_module(
+        f"ssc_figures.figures.{FIGURES[key]}", run_name="__main__", init_globals=tables
+    )

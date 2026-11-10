@@ -7,7 +7,6 @@ Link widths represent **evidence layers only** and should not be interpreted as 
 
 import plotly.graph_objects as go
 
-
 # ============================================================
 # NODES
 # ============================================================

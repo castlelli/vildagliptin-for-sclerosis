@@ -8,13 +8,13 @@
 **Visualization:** Plotly
 """
 
-from ssc_figures.io import OUTPUT_DIR, load_tsv
-
-from plotly.subplots import make_subplots
-import plotly.graph_objects as go
-import pandas as pd
 import numpy as np
-from IPython.display import display, HTML
+import pandas as pd
+import plotly.graph_objects as go
+from IPython.display import HTML, display
+from plotly.subplots import make_subplots
+
+from ssc_figures.io import OUTPUT_DIR, load_tsv
 
 # ============================================================
 # LOAD DATA

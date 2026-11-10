@@ -9,16 +9,17 @@
 **Visualization:** DaVinci clinical association output + Matplotlib clinical summary
 """
 
-from ssc_figures.io import OUTPUT_DIR, data_file
+from pathlib import Path
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-
+from IPython.display import HTML, display
 from PIL import Image
-from pathlib import Path
-from IPython.display import display, HTML
 
+from ssc_figures import values
+from ssc_figures.io import OUTPUT_DIR, data_file
+from ssc_figures.style import crop_white_margin
 
 # ============================================================
 # LOAD REPRESENTATIVE DAVINCI FIGURE
@@ -32,48 +33,6 @@ activated_img = Image.open(data_file("R3c_activated_PRSS23_THBS1_vs_mRSS.png")).
 # ============================================================
 
 
-def crop_white_margin(image, threshold=248, padding=8):
-    """Crop near-white margins from an RGB image.
-
-    Parameters
-    ----------
-    image : PIL.Image.Image
-        RGB image (a 3-channel array is assumed).
-    threshold : int, default 248
-        Pixels with any channel below this value count as content.
-    padding : int, default 8
-        Pixels of margin kept around the detected content.
-
-    Returns
-    -------
-    PIL.Image.Image
-        Cropped image, or the input unchanged if it is entirely near-white.
-    """
-
-    arr = np.asarray(image)
-
-    mask = np.any(arr < threshold, axis=2)
-
-    coords = np.argwhere(mask)
-
-    if coords.size == 0:
-        return image
-
-    y0, x0 = coords.min(axis=0)
-
-    y1, x1 = coords.max(axis=0)
-
-    x0 = max(0, x0 - padding)
-
-    y0 = max(0, y0 - padding)
-
-    x1 = min(image.width, x1 + padding)
-
-    y1 = min(image.height, y1 + padding)
-
-    return image.crop((x0, y0, x1, y1))
-
-
 activated_img = crop_white_margin(activated_img)
 
 
@@ -84,15 +43,7 @@ activated_img = crop_white_margin(activated_img)
 # No scientific statistics are recomputed in Colab.
 # ============================================================
 
-clinical = pd.DataFrame(
-    [
-        {"program": "Activated\nPRSS23 / THBS1", "rho": 0.704484, "adjusted_status": "SUPPORTED"},
-        {"program": "Myofibroblast", "rho": 0.691531, "adjusted_status": "SUPPORTED"},
-        {"program": "ECM", "rho": 0.551557, "adjusted_status": "SUPPORTED"},
-        {"program": "Progenitor", "rho": 0.438975, "adjusted_status": "DIRECTIONAL"},
-        {"program": "DPP4", "rho": -0.211494, "adjusted_status": "NOT SUPPORTED"},
-    ]
-)
+clinical = pd.DataFrame(values.MRSS_R3)
 
 
 # ============================================================

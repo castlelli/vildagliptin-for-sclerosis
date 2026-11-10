@@ -75,7 +75,9 @@ def _find_on_drive() -> Path:
                 print(f"  - {path}")
         else:
             print("\nNo ZIP files were found anywhere in MyDrive.")
-        raise FileNotFoundError(f"Could not find '{BUNDLE_NAME}' anywhere inside Google Drive/MyDrive.")
+        raise FileNotFoundError(
+            f"Could not find '{BUNDLE_NAME}' anywhere inside Google Drive/MyDrive."
+        )
     if len(hits) > 1:
         print(f"\nMultiple copies of {BUNDLE_NAME} were found:")
         for path in hits:

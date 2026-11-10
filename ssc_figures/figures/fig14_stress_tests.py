@@ -11,16 +11,15 @@
 **Visualization:** Matplotlib
 """
 
-from ssc_figures.io import OUTPUT_DIR, load_tsv
+from pathlib import Path
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-
+from IPython.display import HTML, display
 from matplotlib.patches import FancyBboxPatch
-from pathlib import Path
-from IPython.display import display, HTML
 
+from ssc_figures.io import OUTPUT_DIR, load_tsv, require
 
 # ============================================================
 # LOAD FROZEN DAVINCI RESULTS
@@ -28,17 +27,17 @@ from IPython.display import display, HTML
 
 r16_all = load_tsv("R16_primary_vildagliptin_summary.tsv")
 
-r16_verdict = load_tsv("R16_primary_vildagliptin_verdict.tsv")
-
-r16_target = load_tsv("R16_target_validation_verdict.tsv")
-
-r16_concordance = load_tsv("R16_drug_target_concordance.tsv")
+# Documented but not drawn (the original cell loaded them without using them).
+require(
+    "R16_primary_vildagliptin_verdict.tsv",
+    "R16_target_validation_verdict.tsv",
+    "R16_drug_target_concordance.tsv",
+)
 
 r17 = load_tsv("R17_human_genetics_summary.tsv")
 
-# NOTE: only `r16_all` feeds the figure. The R16 verdict/target/concordance
-# tables are loaded but unused, and `r17` is only checked for one row; the
-# genetics cards and verdict text below are hardcoded.
+# NOTE: only `r16_all` feeds the figure; `r17` is only checked for one row,
+# and the genetics cards and verdict text below are hardcoded.
 
 
 # ============================================================

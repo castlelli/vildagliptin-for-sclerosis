@@ -11,17 +11,16 @@
 **How to read the figure:** color and symbol identify the independent human cohort; filled markers indicate q < 0.05; open markers indicate q ≥ 0.05. In Panel A, horizontal lines represent 95% confidence intervals.
 """
 
-from ssc_figures.io import OUTPUT_DIR, load_tsv
+from pathlib import Path
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-
+from IPython.display import HTML, display
 from matplotlib.gridspec import GridSpec
 from matplotlib.lines import Line2D
-from pathlib import Path
-from IPython.display import display, HTML
 
+from ssc_figures.io import OUTPUT_DIR, load_tsv
 
 # ============================================================
 # LOAD RESULTS

@@ -8,17 +8,17 @@
 **Visualization:** Matplotlib
 """
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-from ssc_figures.io import OUTPUT_DIR
 
 # ============================================================
 # BUILD FIGURE — PITCH-OPTIMIZED LAYOUT
 # ============================================================
-
 from matplotlib.gridspec import GridSpec
 from matplotlib.patches import Patch
+
+from ssc_figures.io import OUTPUT_DIR
 
 fig = plt.figure(figsize=(15.5, 8.6), facecolor="white")
 
@@ -185,9 +185,16 @@ def annotate_bar(ax, value, y, q, bar_color, axis_span):
 
 
 # NOTE: `d` (beta_SSc_SD, q_BH, color, label) and `a` (beta_exposure_SD,
-# q_BH, color, label) are not defined earlier in this file. The cell that
-# built them is missing from the Colab export, so running top to bottom
-# raises NameError here. Figure 6's values cannot be traced in this repo.
+# q_BH, color, label) were built by a cell that is missing from the Colab
+# export, so Figure 06's values cannot be traced in this repository. The
+# drawing code below is kept as presented; it runs only if a caller
+# supplies both tables in the module namespace.
+if "d" not in globals() or "a" not in globals():
+    raise NotImplementedError(
+        "Figure 06 needs two tables (`d`: beta_SSc_SD, q_BH, color, label; "
+        "`a`: beta_exposure_SD, q_BH, color, label) whose loader is missing "
+        "from the original Colab export."
+    )
 
 # ============================================================
 # PANEL A — DISEASE EFFECT

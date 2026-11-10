@@ -8,25 +8,25 @@
 **Interpretation:** absence claims are restricted to the records reviewed
 """
 
-from ssc_figures.io import OUTPUT_DIR, load_tsv
+from pathlib import Path
 
 import matplotlib.pyplot as plt
-from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
-from pathlib import Path
-from IPython.display import display, HTML
+from IPython.display import HTML, display
+from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
+
+from ssc_figures.io import OUTPUT_DIR, require
 
 # ============================================================
 # LOAD CURATED RESULTS
 # ============================================================
 
-pubmed = load_tsv("R6b_PubMed_evidence_class_summary.tsv")
-
-ct_skin = load_tsv("R6a_ClinicalTrials_skin_dermal_fibrosis.tsv")
-
-ct_scleroderma = load_tsv("R6a_ClinicalTrials_localized_scleroderma.tsv")
-
-# NOTE: these three tables are loaded but not used below; the figure and
-# verdict text in this cell are hardcoded.
+# NOTE: the figure and verdict text in this cell are hardcoded. These three
+# tables document them; the original cell loaded them without using them.
+require(
+    "R6b_PubMed_evidence_class_summary.tsv",
+    "R6a_ClinicalTrials_skin_dermal_fibrosis.tsv",
+    "R6a_ClinicalTrials_localized_scleroderma.tsv",
+)
 
 # ============================================================
 # FIGURE

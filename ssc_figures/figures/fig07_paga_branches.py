@@ -11,17 +11,16 @@
 **How to read:** network structure represents PAGA connectivity; node color represents the adjusted SSc effect on donor-level cluster occupancy. Red = enriched in SSc; blue = depleted in SSc.
 """
 
-from ssc_figures.io import OUTPUT_DIR, data_file
-
-import numpy as np
-import matplotlib.pyplot as plt
-
 from pathlib import Path
-from PIL import Image
+
+import matplotlib.pyplot as plt
+from IPython.display import HTML, display
 from matplotlib.gridspec import GridSpec
 from matplotlib.patches import FancyBboxPatch
-from IPython.display import display, HTML
+from PIL import Image
 
+from ssc_figures.io import OUTPUT_DIR, data_file
+from ssc_figures.style import crop_white_margin
 
 # ============================================================
 # INPUT
@@ -41,49 +40,7 @@ network_img = Image.open(img_enrichment).convert("RGB")
 # ============================================================
 
 
-def crop_white_margin(image, threshold=248, padding=10):
-    """Crop near-white margins from an RGB image.
-
-    Parameters
-    ----------
-    image : PIL.Image.Image
-        RGB image (a 3-channel array is assumed).
-    threshold : int, default 248
-        Pixels with any channel below this value count as content.
-    padding : int, default 10
-        Pixels of margin kept around the detected content.
-
-    Returns
-    -------
-    PIL.Image.Image
-        Cropped image, or the input unchanged if it is entirely near-white.
-    """
-
-    arr = np.asarray(image)
-
-    mask = np.any(arr < threshold, axis=2)
-
-    coords = np.argwhere(mask)
-
-    if coords.size == 0:
-        return image
-
-    y0, x0 = coords.min(axis=0)
-
-    y1, x1 = coords.max(axis=0)
-
-    x0 = max(0, x0 - padding)
-
-    y0 = max(0, y0 - padding)
-
-    x1 = min(image.width, x1 + padding)
-
-    y1 = min(image.height, y1 + padding)
-
-    return image.crop((x0, y0, x1, y1))
-
-
-network_img = crop_white_margin(network_img)
+network_img = crop_white_margin(network_img, padding=10)
 
 
 # ============================================================

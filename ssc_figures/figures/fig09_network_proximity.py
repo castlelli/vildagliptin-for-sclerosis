@@ -11,19 +11,19 @@
 **How to read:** more negative network-proximity z-scores indicate that a module lies closer to DPP4 than expected under the degree-matched null model. Statistical support is evaluated using FDR-adjusted **q < 0.05**.
 """
 
-from ssc_figures.io import OUTPUT_DIR, load_tsv
-
 import re
 import textwrap
+from pathlib import Path
+
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-
+from IPython.display import HTML, display
 from matplotlib.gridspec import GridSpec
 from matplotlib.patches import FancyBboxPatch, Patch
-from pathlib import Path
-from IPython.display import display, HTML
 
+from ssc_figures import values
+from ssc_figures.io import OUTPUT_DIR, load_tsv
 
 # ============================================================
 # LOAD FROZEN DAVINCI RESULTS
@@ -49,14 +49,7 @@ proximity_stats = load_tsv("R10_proximity_statistics.tsv")
 
 # NOTE: hardcoded from the DaVinci R10 run. Any value filled from here is
 # labelled "validated R10 primary fallback" in the printed `source` column.
-R10_PRIMARY_FALLBACK = pd.DataFrame(
-    {
-        "module_id": ["M1", "M2", "M3", "M4"],
-        "z": [-0.989, -1.711, -2.101, -4.520],
-        "p": [0.179, 0.02597, 0.00999, 0.000999],
-        "q": [0.195, 0.03896, 0.01998, 0.002398],
-    }
-)
+R10_PRIMARY_FALLBACK = pd.DataFrame(values.NETWORK_PROXIMITY_R10)
 
 
 # ============================================================

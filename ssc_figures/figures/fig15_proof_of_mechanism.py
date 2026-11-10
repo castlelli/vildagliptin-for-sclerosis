@@ -9,15 +9,14 @@
 **Visualization:** translational go/no-go experiment · Matplotlib
 """
 
-from ssc_figures.io import OUTPUT_DIR
-
 import textwrap
-import matplotlib.pyplot as plt
-
-from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
 from pathlib import Path
-from IPython.display import display, HTML
 
+import matplotlib.pyplot as plt
+from IPython.display import HTML, display
+from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
+
+from ssc_figures.io import OUTPUT_DIR
 
 # ============================================================
 # PALETTE

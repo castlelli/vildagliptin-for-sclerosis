@@ -8,16 +8,15 @@
 **Visualization:** DaVinci UMAP outputs + Matplotlib descriptive summary
 """
 
-from ssc_figures.io import OUTPUT_DIR, data_file, load_tsv
-
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-
-from PIL import Image as PILImage
-from IPython.display import display, HTML
 from pathlib import Path
 
+import matplotlib.pyplot as plt
+import numpy as np
+from IPython.display import HTML, display
+from PIL import Image as PILImage
+
+from ssc_figures.io import OUTPUT_DIR, data_file, load_tsv
+from ssc_figures.style import crop_white_margin
 
 # ============================================================
 # LOAD PROCESSED DAVINCI RESULTS
@@ -33,49 +32,6 @@ celltype_dpp4 = load_tsv("R2b_DPP4_celltype_descriptive_summary.tsv")
 # Here we only crop unused white margins and enlarge the raster
 # for clearer notebook/presentation display.
 # ============================================================
-
-
-def crop_white_margin(image, threshold=248, padding=8):
-    """Crop near-white margins from an image.
-
-    Parameters
-    ----------
-    image : PIL.Image.Image
-        Input image; converted to RGB first.
-    threshold : int, default 248
-        Pixels with any channel below this value count as content.
-    padding : int, default 8
-        Pixels of margin kept around the detected content.
-
-    Returns
-    -------
-    PIL.Image.Image
-        Cropped RGB image, or the RGB-converted input if it is entirely
-        near-white.
-    """
-    img = image.convert("RGB")
-    arr = np.asarray(img)
-
-    # Identify pixels that are not near-white.
-    mask = np.any(arr < threshold, axis=2)
-
-    coords = np.argwhere(mask)
-
-    if coords.size == 0:
-        return img
-
-    y0, x0 = coords.min(axis=0)
-    y1, x1 = coords.max(axis=0)
-
-    x0 = max(0, x0 - padding)
-
-    y0 = max(0, y0 - padding)
-
-    x1 = min(img.width, x1 + padding)
-
-    y1 = min(img.height, y1 + padding)
-
-    return img.crop((x0, y0, x1, y1))
 
 
 def upscale_image(image, factor=2):

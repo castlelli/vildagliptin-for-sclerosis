@@ -46,3 +46,7 @@ split-on-trailing-comma = false
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.ruff.lint.per-file-ignores]
+# `d` and `a` come from a cell missing from the export; see the NOTE there.
+"ssc_figures/figures/fig06_scrna_replication.py" = ["F821"]
