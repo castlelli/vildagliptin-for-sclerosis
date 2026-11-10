@@ -33,6 +33,7 @@
 
   --gutter: clamp(16px, 4vw, 56px);
   --measure: 66ch;
+  --col: 40rem;       /* notebook column; ≈ 66ch of the text face */
   --margin-w: 15rem;
   --step--1: clamp(0.82rem, 0.8rem + 0.1vw, 0.88rem);
   --step-0: clamp(1.05rem, 1rem + 0.25vw, 1.2rem);

@@ -25,7 +25,8 @@
 /* the notebook column + margin column */
 .row {
   display: grid;
-  grid-template-columns: minmax(0, var(--measure)) var(--margin-w);
+  /* rem, not ch: the column must not change width with the row's font */
+  grid-template-columns: minmax(0, var(--col)) var(--margin-w);
   justify-content: start;
   column-gap: clamp(2rem, 4vw, 4rem);
   padding-inline: var(--gutter);
@@ -322,6 +323,8 @@ input[type=range] { accent-color: var(--tracer); }
 
 .colophon { margin-top: clamp(4rem, 10vh, 7rem); padding: 2.5rem var(--gutter) 3rem; border-top: 1px solid var(--ink); max-width: calc(78rem + 2 * var(--gutter)); margin-inline: auto; }
 .colophon p { max-width: 80ch; }
+.colophon .signature { margin-top: 1.6rem; font-family: var(--display); font-size: 1.15rem; color: var(--ink); }
+.colophon .signature a { color: inherit; text-decoration-color: var(--tracer); text-underline-offset: 0.2em; }
 .colophon > p:first-child { font-family: var(--sans); font-weight: 600; font-size: 0.95rem; }
 
 /* citation popover */

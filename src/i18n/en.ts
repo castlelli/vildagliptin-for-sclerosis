@@ -299,6 +299,9 @@ export const en = {
     disclaimer: 'Research hypothesis from a seven-day hackathon. Not clinical evidence, not medical advice. Do not start, stop or change any medication on the basis of this page.',
     credits: 'Third-party figures are reproduced with credit for non-commercial, educational use; rights remain with their publishers. Charts on this page are redrawn from the study’s outputs. Not affiliated with or endorsed by Clarivate, Hospital Israelita Albert Einstein or InovaUSP.',
     built: 'Built with Astro and D3.',
+    authorBy: 'Page and write-up by',
+    author: 'Vinicius Castelli',
+    authorUrl: 'https://castlelli.github.io/',
   },
 
   figs: {

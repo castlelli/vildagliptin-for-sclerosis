@@ -298,6 +298,9 @@ export const pt: Dict = {
     disclaimer: 'Hipótese de pesquisa de um hackathon de sete dias. Não é evidência clínica nem orientação médica. Não comece, interrompa ou altere nenhum medicamento com base nesta página.',
     credits: 'Figuras de terceiros são reproduzidas com crédito, para uso educacional e não comercial; os direitos são de seus editores. Os gráficos desta página foram redesenhados a partir dos resultados do estudo. Sem vínculo com Clarivate, Hospital Israelita Albert Einstein ou InovaUSP, nem endosso deles.',
     built: 'Feito com Astro e D3.',
+    authorBy: 'Página e texto de',
+    author: 'Vinicius Castelli',
+    authorUrl: 'https://castlelli.github.io/pt/',
   },
 
   figs: {

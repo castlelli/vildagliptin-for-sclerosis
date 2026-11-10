@@ -28,7 +28,7 @@ Rule: tracer means signal. Never decorate with it.
 
 ## Structure
 
-- `.row`: a two-column grid, the notebook column (66ch) plus a 15 rem margin column of references (tracer left rule). The margin collapses below 1100 px, where citations open as popovers.
+- `.row`: a two-column grid, the notebook column (`--col`, 40 rem; set in rem so rows with smaller type keep the same width) plus a 15 rem margin column of references (tracer left rule). The margin collapses below 1100 px, where citations open as popovers.
 - `.plate`: a figure pasted into the notebook. It has a 1 px ink frame over the grid ground, an optional title, a caption and a "show the original figure" disclosure.
 - Results follow the same order every time: verdict chip, question (h3), data line (sans, small), plate, finding (larger serif).
 - No cards, no eyebrows, no section numbers. Corners are 2 px; chips are the only pill shape.
