@@ -1,0 +1,272 @@
+---
+import type { Dict } from '../i18n/en';
+import { numbering, rich, keysIn, getRef, shortRef, fullRef } from '../lib/cite';
+import Para from './Para.astro';
+import Plate from './Plate.astro';
+
+interface Props { t: Dict }
+const { t } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const order = numbering(t);
+const R = (s: string) => rich(s, order);
+const cited = [...order.entries()].sort((a, b) => a[1] - b[1]).map(([k, n]) => ({ n, r: getRef(k) }));
+const img = (f: string) => `${base}img/${f}`;
+const verdictLabel: Record<string, string> = t.lang === 'en'
+  ? { supports: 'Supports', refines: 'Refines the model', nosupport: 'No added support', experiment: 'Requires experiment' }
+  : { supports: 'Sustenta', refines: 'Refina o modelo', nosupport: 'Sem apoio adicional', experiment: 'Requer experimento' };
+const res = Object.fromEntries(t.results.map((r) => [r.id, r]));
+const marginFor = (text: string) => keysIn(text).map((k) => ({ n: order.get(k)!, s: shortRef(getRef(k)) }));
+const chartLabels = (id: string) => JSON.stringify({ ...(res[id] as object), ui: t.ui, lang: t.lang });
+const repo = 'https://github.com/castlelli/vildagliptin-for-sclerosis';
+const originals: Record<string, string> = {
+  deg: 'fig-04-bulk-deg.png', celltypes: 'fig-05-dpp4-celltypes.png', states: 'fig-06-fibroblast-states.png',
+  paga: 'fig-07-paga.png', signaling: 'fig-08-progeny.png', network: 'fig-09-network.png', pk: 'fig-10-pk.png',
+};
+const deck = 'https://gamma.app/docs/Hackathon-Grupo-D-0rwwtj2kbafpj8k?mode=doc';
+---
+
+<!-- First viewport -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <h1 id="hero-title">{t.hero.title}</h1>
+    <p class="lede">{t.hero.lede}</p>
+    <p class="hero-verdict"><span class="label">{t.hero.verdictLabel}</span> {t.hero.verdict}</p>
+    <div class="actions">
+      <a class="btn primary" href="#evidence">{t.hero.primary}
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v11M3 8.5 8 13.5l5-5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+      <a class="btn" href="#verdict">{t.hero.secondary}</a>
+    </div>
+    <dl class="hero-facts">
+      {t.hero.facts.map(([k, v]) => <div><dt>{k}</dt><dd>{v}</dd></div>)}
+    </dl>
+  </div>
+  <div class="hero-field grid-ground" data-field>
+    <canvas aria-hidden="true"></canvas>
+    <div class="field-tip" data-tip data-pos={t.hero.tipPos} data-neg={t.hero.tipNeg} hidden></div>
+    <div class="dial">
+      <label for="dose">{t.hero.dial}</label>
+      <input id="dose" type="range" min="0" max="100" step="1" value="0" aria-valuetext="0% DPP-4 inhibition" />
+      <output for="dose" data-inh>0%</output>
+    </div>
+    <p class="readout"><span>{t.hero.rate}</span> <b data-rate>100%</b></p>
+    <p class="schematic">{t.hero.schematic}</p>
+  </div>
+</section>
+
+<!-- Disease -->
+<section class="entry" id={t.disease.id}>
+  <div class="row"><h2>{t.disease.title}</h2></div>
+  {t.disease.body.map((p) => <Para html={R(p)} refs={marginFor(p)} />)}
+  <Plate wide caption={R(t.disease.figCaption)} refs={marginFor(t.disease.figCaption)}>
+    <img src={img('distler-2026-skin.png')} alt={t.figs.distlerAlt} width="923" height="792" loading="lazy" class="photo" />
+  </Plate>
+</section>
+
+<!-- The bet -->
+<section class="entry" id="bet">
+  <div class="row"><h2>{t.bet.title}</h2></div>
+  <Para html={R(t.bet.lede)} refs={[]} />
+  <div class="chain" data-chain>
+    <ol class="chain-track">
+      {t.bet.chain.map((c, i) => (
+        <li>
+          <button type="button" class="chain-node" aria-pressed={i === 0 ? 'true' : 'false'} data-i={i}>
+            <span class="node-label">{c.label}</span>
+            <span class="node-sub" set:html={R(c.sub)} />
+          </button>
+          {c.link && <span class="chain-link" aria-hidden="true"><span>{c.link}</span></span>}
+        </li>
+      ))}
+    </ol>
+    <div class="chain-panels">
+      {t.bet.chain.map((c, i) => (
+        <div class="chain-panel" data-panel={i} hidden={i !== 0}>
+          <p set:html={R(c.evidence)} />
+        </div>
+      ))}
+    </div>
+    <details class="original solo"><summary>{t.ui.showOriginal}</summary><img src={img('deck/fig-11-evidence-chain.png')} alt={`${t.ui.original}: ${t.bet.title}`} loading="lazy" /></details>
+  </div>
+  <div class="row">
+    <dl class="spec">
+      {t.bet.table.map(([k, v]) => <div><dt>{k}</dt><dd set:html={R(v)} /></div>)}
+    </dl>
+    <aside class="margin" aria-hidden="true">
+      {t.bet.table.flatMap(([, v]) => marginFor(v)).filter((m, i, a) => a.findIndex((x) => x.n === m.n) === i).map((m) => <p><b>{m.n}</b> {m.s}</p>)}
+    </aside>
+  </div>
+</section>
+
+<!-- Molecule -->
+<section class="entry" id="molecule">
+  <div class="row"><h2>{t.molecule.title}</h2></div>
+  <Para html={R(t.molecule.body)} refs={marginFor(t.molecule.body)} />
+  <Plate caption={R(t.molecule.rulerNote)} refs={marginFor(t.molecule.rulerNote)} title={t.molecule.rulerTitle} wide>
+    <div class="molecule-plate">
+      <figure class="structure">
+        <img src={img('vildagliptin-structure.png')} alt={t.molecule.structureAlt} width="360" height="250" loading="lazy" />
+        <figcaption>{t.molecule.structureCaption}</figcaption>
+      </figure>
+      <div class="chart" data-chart="ruler" data-labels={JSON.stringify(t.molecule)}></div>
+    </div>
+  </Plate>
+</section>
+
+<!-- Known -->
+<section class="entry" id="known">
+  <div class="row"><h2>{t.known.title}</h2></div>
+  <Para html={R(t.known.lede)} refs={[]} />
+  <div class="row">
+    <ul class="ledger">
+      {t.known.items.map((it) => (
+        <li><span class="tag">{it.tag}</span><span set:html={R(it.text)} /></li>
+      ))}
+    </ul>
+    <aside class="margin" aria-hidden="true">
+      {t.known.items.flatMap((it) => marginFor(it.text)).filter((m, i, a) => a.findIndex((x) => x.n === m.n) === i).map((m) => <p><b>{m.n}</b> {m.s}</p>)}
+    </aside>
+  </div>
+  <Plate caption={R(t.figs.soare)} refs={marginFor(t.figs.soare)}>
+    <img src={img('soare-2020-dpp4.png')} alt={t.figs.soareAlt} width="761" height="366" loading="lazy" class="photo" />
+  </Plate>
+</section>
+
+<!-- Evidence layers -->
+<section class="entry" id={t.layers.id}>
+  <div class="row"><h2>{t.layers.title}</h2></div>
+  <Para html={R(t.layers.lede)} refs={[]} />
+  <nav class="layers" aria-label={t.layers.title}>
+    <span class="layers-end">{t.layers.from}</span>
+    <ol>
+      {t.layers.items.map((l) => <li><a href={`#${l.anchor}`}>{l.name}</a></li>)}
+    </ol>
+    <span class="layers-end">{t.layers.to}</span>
+  </nav>
+  <div class="row"><details class="original solo"><summary>{t.ui.showOriginal}</summary><img src={img('deck/evidence-architecture.png')} alt={`${t.ui.original}: ${t.layers.title}`} loading="lazy" /></details></div>
+
+  {t.results.map((r) => (
+    <article class="result" id={r.id} aria-labelledby={`${r.id}-q`}>
+      <div class="row">
+        <header>
+          <p class={`verdict v-${r.verdict}`}>{verdictLabel[r.verdict]}</p>
+          <h3 id={`${r.id}-q`}>{r.q}</h3>
+        </header>
+      </div>
+      <Para html={R(r.data)} refs={marginFor(r.data)} small />
+      {r.id !== 'gap' && (
+        <Plate wide original={img(`deck/${originals[r.id]}`)} originalLabel={t.ui.showOriginal} originalAlt={`${t.ui.original}: ${r.q}`}>
+          <div class="chart" data-chart={r.id} data-labels={chartLabels(r.id)}></div>
+        </Plate>
+      )}
+      <Para html={R(r.finding)} refs={marginFor(r.finding)} finding />
+    </article>
+  ))}
+</section>
+
+<!-- Limits -->
+<section class="entry" id={t.limits.id}>
+  <div class="row"><h2>{t.limits.title}</h2></div>
+  <Para html={R(t.limits.lede)} refs={[]} />
+  <div class="row">
+    <ol class="refusals">
+      {t.limits.items.map((it) => <li><h3>{it.h}</h3><p set:html={R(it.p)} /></li>)}
+    </ol>
+    <aside class="margin" aria-hidden="true">
+      {t.limits.items.flatMap((it) => marginFor(it.p)).filter((m, i, a) => a.findIndex((x) => x.n === m.n) === i).map((m) => <p><b>{m.n}</b> {m.s}</p>)}
+    </aside>
+  </div>
+  <Plate wide title={t.limits.landscapeTitle} caption={t.limits.landscapeNote}>
+    <div class="chart" data-chart="landscape" data-labels={JSON.stringify({ cols: t.limits.cols, lang: t.lang, ui: t.ui })}></div>
+  </Plate>
+</section>
+
+<!-- Decision -->
+<section class="entry decision" id={t.decision.id}>
+  <div class="row"><h2>{t.decision.title}</h2></div>
+  <div class="row">
+    <p class="statement">{t.decision.statement} <span>{t.decision.caveat}</span></p>
+  </div>
+  {t.decision.body.map((p) => <Para html={R(p)} refs={marginFor(p)} />)}
+
+  <div class="row"><h3 class="sub">{t.decision.expTitle}</h3></div>
+  <Para html={R(t.decision.expLede)} refs={[]} />
+  <Plate wide>
+    <div class="experiment" data-experiment>
+      <div class="exp-col">
+        <h4>{t.decision.arms}</h4>
+        <ol class="arms">{t.decision.armList.map((a) => <li>{a}</li>)}</ol>
+        <h4>{t.decision.readouts}</h4>
+        <ul class="readouts">{t.decision.readoutList.map((r) => <li><b>{r.name}</b> <span class="mono">{r.markers}</span></li>)}</ul>
+      </div>
+      <div class="exp-col logic">
+        <h4>{t.decision.logic}</h4>
+        <fieldset>
+          <legend>{t.decision.kdWorks}</legend>
+          <label><input type="radio" name="kd" value="1" checked /> {t.decision.yes}</label>
+          <label><input type="radio" name="kd" value="0" /> {t.decision.no}</label>
+        </fieldset>
+        <fieldset>
+          <legend>{t.decision.drugWorks}</legend>
+          <label><input type="radio" name="drug" value="1" checked /> {t.decision.yes}</label>
+          <label><input type="radio" name="drug" value="0" /> {t.decision.no}</label>
+        </fieldset>
+        <div class="outcome" aria-live="polite" data-outcomes={JSON.stringify([...t.decision.outcomes, { id: 'off', drug: true, kd: false, ...t.decision.offTarget }])}>
+          <p class="outcome-title"></p>
+          <p class="outcome-text"></p>
+        </div>
+      </div>
+    </div>
+  </Plate>
+</section>
+
+<!-- Role -->
+<section class="entry" id="role">
+  <div class="row"><h2>{t.role.title}</h2></div>
+  {t.role.body.map((p) => <Para html={R(p)} refs={[]} />)}
+  <div class="row">
+    <div>
+      <h3 class="sub">{t.role.stackTitle}</h3>
+      <ul class="stack">{t.role.stack.map((s) => <li>{s}</li>)}</ul>
+      <p class="links">
+        <a class="btn" href={repo}>{t.role.repo}</a>
+        <a class="btn" href={deck}>{t.role.deck}</a>
+        <a class="btn" href="https://castlelli.github.io/">{t.role.portfolio}</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- References -->
+<section class="entry" id={t.references.id}>
+  <div class="row"><h2>{t.references.title}</h2></div>
+  <div class="row"><p class="small">{t.references.note}</p></div>
+  <ol class="reflist">
+    {cited.map(({ n, r }) => (
+      <li id={`ref-${n}`} value={n}>
+        <span set:html={fullRef(r)} />
+        {r.doi ? <a href={`https://doi.org/${r.doi}`}>doi:{r.doi}</a> : r.url ? <a href={r.url}>{r.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}</a> : null}
+        {r.pmid && <a class="pmid" href={`https://pubmed.ncbi.nlm.nih.gov/${r.pmid}/`}>PMID {r.pmid}</a>}
+        {r.note && r.kind !== 'data' && <span class="refnote">{r.note}</span>}
+      </li>
+    ))}
+  </ol>
+</section>
+
+<footer class="colophon">
+  <p>{t.footer.disclaimer}</p>
+  <p class="small">{t.footer.credits}</p>
+  <p class="small">{t.footer.built} <a href={repo}>GitHub</a></p>
+</footer>
+
+<div class="cite-pop" role="dialog" aria-modal="false" hidden data-cite-pop></div>
+<script type="application/json" id="refdata" set:html={JSON.stringify(Object.fromEntries(cited.map(({ n, r }) => [r.key, { n, html: fullRef(r), url: r.doi ? `https://doi.org/${r.doi}` : r.url }])))} />
+
+<script>
+  import { mountField } from '../scripts/hero-field';
+  import { mountAll } from '../scripts/charts';
+  import { mountUi } from '../scripts/ui';
+  const field = document.querySelector<HTMLElement>('[data-field]');
+  if (field) mountField(field);
+  mountUi();
+  mountAll();
+</script>
