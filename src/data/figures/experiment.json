@@ -1,5 +1,5 @@
 {
- "source": "code: vildagliptin_ssc_figures.py cell 15 (L10011+), exact",
+ "source": "code: ssc_figures/figures/fig15_proof_of_mechanism.py, exact",
  "exact": true,
  "system": "Primary dermal fibroblasts · SSc lesional samples + healthy donor controls · ± TGFβ1 stimulation",
  "arms": [

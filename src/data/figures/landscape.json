@@ -1,5 +1,5 @@
 {
- "source": "code: vildagliptin_ssc_figures.py cell 16 (L10592+), text exact; statuses as printed where the code prints one",
+ "source": "code: ssc_figures/values.py EVIDENCE_LANDSCAPE, text exact; statuses as printed where the code prints one",
  "exact": true,
  "columns": {
   "supports": "Supports hypothesis",
