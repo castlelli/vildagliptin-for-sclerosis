@@ -225,6 +225,8 @@ const deck = 'https://gamma.app/docs/Hackathon-Grupo-D-0rwwtj2kbafpj8k?mode=doc'
   {t.role.body.map((p) => <Para html={R(p)} refs={[]} />)}
   <div class="row">
     <div>
+      <h3 class="sub">{t.role.teamTitle}</h3>
+      <ul class="team">{t.role.team.map((p) => <li><span class="team-name">{p.name}</span><span class="team-org">{p.org}</span></li>)}</ul>
       <h3 class="sub">{t.role.stackTitle}</h3>
       <ul class="stack">{t.role.stack.map((s) => <li>{s}</li>)}</ul>
       <p class="links">

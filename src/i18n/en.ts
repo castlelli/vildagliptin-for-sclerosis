@@ -282,6 +282,13 @@ export const en = {
       'This was a team project: five people, seven days, at the Cortellis Drug Repositioning Hackathon (Clarivate and Hospital Israelita Albert Einstein, with InovaUSP). I co-led the computational analysis, from the single-cell and network work to the pharmacology model and the evidence notebook, and presented the proposal and its business case.',
       'The analyses ran on an HPC cluster with Slurm. The public repository holds the notebook that loads the frozen results, checks every file against its SHA-256 hash and renders the figures. The pipeline itself is not public.',
     ],
+    teamTitle: 'Contributors',
+    team: [
+      { name: 'Anne Louise Silva Torres', org: 'Laboratório de Fisiologia Molecular e IA, UFES' },
+      { name: 'Carlos Henrique Gomes', org: 'CodeXa Biotech' },
+      { name: 'Celso Vitor Calomeno', org: 'LEEP, ICB, USP' },
+      { name: 'Luiz Silva Espinosa', org: 'CSBL' },
+    ],
     stackTitle: 'Methods and tools',
     stack: ['Python', 'Scanpy · AnnData', 'Harmony', 'PAGA', 'decoupler · PROGENy · CollecTRI', 'STRING v12 · NetworkX', 'statsmodels · SciPy', 'PK/PD modelling', 'Plotly · Matplotlib', 'Slurm HPC'],
     repo: 'Notebook and code',
